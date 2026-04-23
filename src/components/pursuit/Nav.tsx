@@ -94,7 +94,7 @@ const Nav = () => {
         {/* Torn paper logo */}
         <a href="#top" onClick={(e) => handleNav(e, "top")} className="flex items-center gap-2 group">
         <img
-          src="/pursuitbutton.png"
+          src={`${import.meta.env.BASE_URL}pursuitbutton.png`}
           alt="Pursuit"
           className="-rotate-2 group-hover:rotate-0 transition-transform"
           style={{ height: "38px", width: "auto" }}
