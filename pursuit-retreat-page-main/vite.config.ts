@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-export default defineConfig({
-  base: "/pursuit-retreat-page-main/",
+export default defineConfig(({ command }) => ({
+  base: command === "build" ? "/P2026/" : "/",
   server: {
     host: "::",
     port: 8080,
@@ -18,4 +18,4 @@ export default defineConfig({
     },
     dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime", "@tanstack/react-query", "@tanstack/query-core"],
   },
-});
+}));
