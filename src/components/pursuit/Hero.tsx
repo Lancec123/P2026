@@ -17,7 +17,7 @@ const Hero = () => {
       </div>
  
       {/* Center content */}
-      <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] -mt-8 md:mt-0">
+      <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] -mt-4 md:mt-0">
         <p className="font-hand text-2xl md:text-3xl text-highlight rotate-[-2deg]">
           Breaking Grounds —
         </p>
