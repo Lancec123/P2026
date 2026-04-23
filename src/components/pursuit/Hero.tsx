@@ -18,8 +18,12 @@ const Hero = () => {
         <span>Vol. 07 — Spring</span>
         <button
           onClick={() => setVerseOpen(true)}
-          className="uppercase tracking-[0.25em] text-ink/70 hover:text-ink transition-colors cursor-pointer underline-offset-4 hover:underline"
+          className="relative uppercase tracking-[0.25em] text-ink/80 hover:text-ink transition-all cursor-pointer px-4 py-2 bg-paper/90 shadow-soft rotate-[1.5deg] hover:rotate-0"
         >
+          {/* Tape piece */}
+          <span className="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-4 bg-orange-200/80 backdrop-blur-sm rotate-[-1deg] shadow-sm" 
+            style={{ clipPath: "polygon(2% 0%, 98% 2%, 97% 98%, 3% 100%)" }}
+          />
           Colossians 2:6-7
         </button>
       </div>
