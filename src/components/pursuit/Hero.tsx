@@ -1,6 +1,9 @@
 import heroImg from "@/assets/hero-meadow.png";
+import { useState } from "react";
 
 const Hero = () => {
+  const [verseOpen, setVerseOpen] = useState(false);
+
   return (
     <section id="top" className="relative min-h-[100svh] w-full overflow-hidden">
       {/* Background */}
@@ -13,9 +16,48 @@ const Hero = () => {
       {/* Top corner labels */}
       <div className="relative z-10 container pt-24 flex justify-between text-xs uppercase tracking-[0.25em] text-ink/70">
         <span>Vol. 07 — Spring</span>
-        <span>Colossians 2:6-7</span>
+        <button
+          onClick={() => setVerseOpen(true)}
+          className="uppercase tracking-[0.25em] text-ink/70 hover:text-ink transition-colors cursor-pointer underline-offset-4 hover:underline"
+        >
+          Colossians 2:6-7
+        </button>
       </div>
- 
+
+      {/* Verse Modal */}
+      {verseOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-6"
+          onClick={() => setVerseOpen(false)}
+        >
+          {/* Backdrop */}
+          <div className="absolute inset-0 bg-ink/40 backdrop-blur-sm" />
+
+          {/* Card */}
+          <div
+            className="relative max-w-md w-full bg-paper shadow-paper p-8 md:p-10 rotate-[-1deg]"
+            style={{ clipPath: "polygon(1% 2%, 99% 0%, 100% 97%, 98% 100%, 1% 99%, 0% 3%)" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <p className="text-xs uppercase tracking-[0.3em] text-ink/50 mb-6">
+              Colossians 2:6-7
+            </p>
+            <p className="font-serif-display italic text-2xl md:text-3xl text-ink leading-relaxed">
+              "So then, just as you received Christ Jesus as Lord, continue to live your lives in him, rooted and built up in him, strengthened in the faith as you were taught, and overflowing with thankfulness."
+            </p>
+            <div className="mt-6 flex justify-between items-center">
+              <span className="text-xs uppercase tracking-[0.2em] text-ink/40">NIV</span>
+              <button
+                onClick={() => setVerseOpen(false)}
+                className="text-xs uppercase tracking-[0.2em] text-ink/60 hover:text-ink transition-colors"
+              >
+                Close ✕
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Center content */}
       <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] -mt-4 md:mt-0">
         <p className="font-hand text-2xl md:text-3xl text-highlight rotate-[-2deg]">
@@ -32,7 +74,6 @@ const Hero = () => {
         <p className="max-w-xl font-serif-display text-lg md:text-xl text-ink/80 leading-relaxed mt-4">
           We play in the grass and play volleyball, and we play league of legends and watch tuff movies and eat and ya idk
         </p>
-
         <div className="flex flex-wrap gap-3 justify-center mt-6">
           <a href="#register" className="px-7 py-3 bg-ink text-paper text-xs uppercase tracking-[0.25em] hover:bg-primary transition-colors">
             Save your spot
