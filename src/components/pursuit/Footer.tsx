@@ -1,4 +1,5 @@
 import heroImg from "@/assets/hero-meadow.png";
+import { Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -33,7 +34,27 @@ const Footer = () => {
             <a href="#schedule" className="hover:text-paper">Schedule</a>
             <a href="#faq" className="hover:text-paper">FAQ</a>
           </div>
-          <div className="text-paper/50 text-xs">© 2026 WIN Mississauga</div>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.instagram.com/winontario/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-paper/60 hover:text-paper transition-colors"
+              aria-label="Instagram"
+            >
+                <Instagram size={26} strokeWidth={2.5} />
+            </a>
+            <a
+              href="https://www.facebook.com/winontario/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-paper/60 hover:text-paper transition-colors"
+              aria-label="Facebook"
+            >
+              <Facebook size={26} strokeWidth={2.5} />
+            </a>
+            <div className="text-paper/50 text-xs">© 2026 WIN Mississauga</div>
+          </div>
         </div>
       </div>
     </section>
