@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const tabs = ["About", "Get Involved", "Schedule", "FAQ"];
+const tabs = ["About", "Get Involved", "Schedule", "FAQ", "Parents"];
 
 const slug = (t: string) => t.toLowerCase().replace(/\s+/g, "-");
 
