@@ -6,6 +6,7 @@ import Schedule from "@/components/pursuit/Schedule";
 import FAQ from "@/components/pursuit/FAQ";
 import Parents from "@/components/pursuit/Parents";
 import Footer from "@/components/pursuit/Footer";
+import Give from "@/components/pursuit/Give";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <Schedule />
       <FAQ />
       <Parents />
+      <Give />
       <Footer />
     </main>
   );
