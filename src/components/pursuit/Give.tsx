@@ -5,7 +5,7 @@ const steps = [
   "Select Interac e-Transfer then click Send Money",
   "Select the account you wish to send from, then enter the amount",
   "For recipient, input: finance@winontario.org",
-  "In the note field, input: PC25",
+  "In the note field, input: PC26",
   "Send",
 ];
 
