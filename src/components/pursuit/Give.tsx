@@ -52,7 +52,7 @@ const Give = () => {
                         ) : i === 4 ? (
                           <>
                             In the note field, input:{" "}
-                            <span className="font-mono bg-ink/5 px-2 py-0.5 text-ink font-bold">PC25</span>
+                            <span className="font-mono bg-ink/5 px-2 py-0.5 text-ink font-bold">PC26</span>
                           </>
                         ) : (
                           step
