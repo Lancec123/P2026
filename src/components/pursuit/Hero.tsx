@@ -9,6 +9,7 @@ const Hero = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img src={heroImg} alt="Meadow with door illustration" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-paper/25" />
         <div className="absolute inset-0 bg-gradient-to-b from-paper/40 via-transparent to-paper" />
         <div className="absolute inset-0 vignette" />
       </div>
@@ -67,7 +68,7 @@ const Hero = () => {
         <p className="font-hand text-2xl md:text-3xl text-highlight rotate-[-2deg]">
           Breaking Grounds —
         </p>
-        <h1 className="font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] text-ink [text-shadow:_0_0_10px_rgba(255,255,255,0.9),_0_0_40px_rgba(255,255,255,0.5)]">
+        <h1 className="font-serif-display italic text-7xl md:text-[10rem] leading-[0.9]]">
           Pursuit
         </h1>
         <div className="flex items-center gap-4 text-xs uppercase tracking-[0.3em] text-ink/80">
