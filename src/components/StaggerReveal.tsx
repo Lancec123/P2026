@@ -12,7 +12,7 @@ const container = {
 };
 
 const item = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0.3, y: 24 },
   show: {
     opacity: 1,
     y: 0,
