@@ -21,19 +21,19 @@ const days = [
       ["7:30 AM", "Quiet morning walk"],
       ["9:00 AM", "Breakfast"],
       ["10:30 AM", "Main Events"],
-      ["2:00 PM", "Free afternoon / VOLLEYBALL!!!"],
-      ["7:00 PM", "Din Din time get mcd"],
+      ["2:00 PM", "Free afternoon"],
+      ["7:00 PM", "Dinner"],
     ],
   },
   {
     day: "Day 03",
     date: "Mon / July 20",
-    title: "League of Legends LAN party",
+    title: "Growth",
     items: [
       ["8:00 AM", "Breakfast"],
-      ["9:30 AM", "League"],
-      ["1:00 PM", "Lunch on the trail"],
-      ["7:00 PM", "League of Legends"],
+      ["9:30 AM", "Worship"],
+      ["1:00 PM", "Prayer groups"],
+      ["7:00 PM", "Dinner"],
     ],
   },
   {
@@ -47,16 +47,7 @@ const days = [
       ["9:00 PM", "Last fire"],
     ],
   },
-  {
-    day: "Day 05",
-    date: "Wed / July 22",
-    title: "Carry It Home",
-    items: [
-      ["8:00 AM", "Final breakfast"],
-      ["9:30 AM", "Sending session"],
-      ["11:00 AM", "Pack & depart"],
-    ],
-  },
+  
 ];
 
 const Schedule = () => {

@@ -23,29 +23,23 @@ const About = () => {
         <StaggerReveal className="lg:col-span-5 space-y-8">
           <StaggerItem>
             <h2 className="font-serif-display text-5xl md:text-6xl leading-[1.05] text-ink">
-              God's truth, love, mercy, and presence call us out
-              of darkness, root us in Him, and lead us into purpose.
+              Experience Jesus' love in a whole new way
             </h2>
           </StaggerItem>
           <StaggerItem>
             <p className="text-lg text-ink/75 leading-relaxed">
-              This concept is rooted in the idea that, as humans, we are drawn to the light.
-              "Breaking Ground" should be represented in a way that is not overly literal,
-              allowing it to take many forms, since the experience looks different for
-              everyone. These images and icons symbolize the light we seek, reflecting
-              God's truth, love, and presence as He leads us into a life of true purpose.
+              At Pursuit Camp, our mission is to help youth (age 12 – 17) and young adults (age 18 – 28) passionately pursue a deeper relationship with Jesus Christ. We provide an immersive and transformative experience that inspires participants to seek out and connect with God in new and meaningful ways. Through dynamic worship, engaging activities, and authentic community, we seek to create a space where individuals can explore their faith, ask tough questions, and experience the unconditional love of Christ. Our goal is to equip each person with the tools they need to pursue a life of purpose and fulfillment, rooted in their relationship with God. We believe that everyone is on a unique journey in their pursuit of Christ. Whether you are a lifelong Christian or just beginning to explore your faith, our camp welcomes you with open arms. Our hope is that each participant will leave with a renewed passion for pursuing Christ, a deeper understanding of themselves, and a supportive community to walk alongside them on their journey.
             </p>
           </StaggerItem>
           <StaggerItem>
             <p className="text-lg text-ink/75 leading-relaxed">
-              Expect bonfires that go too late, mornings quieter than you remember,
-              and friendships that show up when you weren't looking.
+              Hosted by the Young People's Ministry (Torch) of Word International Ministries of Ontario.
             </p>
           </StaggerItem>
           <StaggerItem>
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-ink/15">
               {[
-                { n: "5", l: "Days" },
+                { n: "4", l: "Days" },
                 { n: "120+", l: "Youth" },
                 { n: "01", l: "Pursuit" },
               ].map((s) => (

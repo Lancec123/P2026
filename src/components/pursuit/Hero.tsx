@@ -67,16 +67,16 @@ const Hero = () => {
         <p className="font-hand text-2xl md:text-3xl text-highlight rotate-[-2deg]">
           Breaking Grounds —
         </p>
-        <h1 className="font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] text-ink">
+        <h1 className="font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] text-ink [text-shadow:_0_0_10px_rgba(255,255,255,0.9),_0_0_40px_rgba(255,255,255,0.5)]">
           Pursuit
         </h1>
         <div className="flex items-center gap-4 text-xs uppercase tracking-[0.3em] text-ink/80">
           <span className="h-px w-10 bg-ink/40" />
-          <span>April 18 — 18, 2026</span>
+          <span>PEARCE WILLIAMS April 18 — 18, 2026</span>
           <span className="h-px w-10 bg-ink/40" />
         </div>
         <p className="max-w-xl font-serif-display text-lg md:text-xl text-ink/80 leading-relaxed mt-4">
-          We play in the grass and play volleyball, and we play league of legends and watch tuff movies and eat and ya idk
+          Through dynamic worship, engaging activities, and authentic community, we seek to create a space where individuals can explore their faith, ask tough questions, and experience the unconditional love of Christ
         </p>
         <div className="flex flex-wrap gap-3 justify-center mt-6">
           <a href="#register" className="px-7 py-3 bg-ink text-paper text-xs uppercase tracking-[0.25em] hover:bg-primary transition-colors">

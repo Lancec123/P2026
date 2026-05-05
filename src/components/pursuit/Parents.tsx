@@ -19,7 +19,7 @@ const disclaimers = [
   },
   {
     title: "Transportation",
-    body: "Transportation to and from the retreat is the responsibility of the parent or guardian unless otherwise arranged. Drop-off and pick-up times will be communicated closer to the retreat date.",
+    body: "Drop-off and pick-up times will be communicated closer to the retreat date.",
   },
   {
     title: "Refund Policy",

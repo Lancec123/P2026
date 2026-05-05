@@ -4,12 +4,11 @@ import campBg from "@/assets/camp-background.jpg";
 import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 
 const faqs = [
-  { q: "Who can come?", a: "Pursuit is open to all league of legends players. If you're bringing a friend who isn't a leaguer, even better — that's kind of the point." },
+  { q: "Who can come?", a: "Pursuit is open to all Youth. Feel free to bring a friend and grow together! — that's kind of the point :]" },
   { q: "How much does it cost?", a: "$1 per student, all-in. This covers lodging, all meals, and materials." },
-  { q: "Where is it?", a: "idk where it is hieu drove me there i was asleep lol" },
-  { q: "What should I pack?", a: "A Bible... maybe a pillow and blanket bc someone didnt bring a pillow or blanket last time..." },
-  { q: "Can parents volunteer?", a: "idk i guess" },
-  { q: "whos the tuffest", a: "Lance Matthew Cabance" },
+  { q: "Where is it?", a: "Pearce Williams 8009 Iona Rd, Fingal, ON N0L 1K0" },
+  { q: "What should I pack?", a: "A Bible, pillow, blanket, extra clothes, toiletry and yourself!" },
+  { q: "Can parents volunteer?", a: "Yes!" },
 ];
 
 const FAQ = () => {

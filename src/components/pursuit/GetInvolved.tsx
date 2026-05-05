@@ -4,22 +4,22 @@ import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 const roles = [
   {
     title: " Group Leader",
-    desc: "Be the group leader, the league team captain, the one to take the nexus down!!!!!",
+    desc: "Be the group leader, help lead your team through games, prayers making sure everyone has fun!",
     commit: "Full retreat",
   },
   {
-    title: "Truck Driver",
-    desc: "Only for Lance and Hieu bc we are the tuffest truck drivers.",
+    title: "Media Team",
+    desc: "Support the Media team by helping with slideshows, recordings, pictures and more!",
     commit: "Full retreat",
   },
   {
     title: "Kitchen Crew",
-    desc: "Make like super tuff food like little ceasars... but did it hear her... see her...",
+    desc: "Assist with the cleaning, preparing plates and making sure everyone's bellys are happy :]",
     commit: "Day shifts",
   },
   {
     title: "Technical Team",
-    desc: "Be the smart fellas that do tech stuff. LIGTHS!!!!",
+    desc: "Help with all the techy stuff! Like lights, monitors anything techy!",
     commit: "Setup + teardown",
   },
 ];
