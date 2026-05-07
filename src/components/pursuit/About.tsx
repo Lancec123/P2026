@@ -2,6 +2,60 @@ import kidsImg from "@/assets/kids-running.png";
 import flowerImg from "@/assets/flower-figure.png";
 import tornImg from "@/assets/torn-paper.png";
 import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
+import { useEffect, useRef, useState } from "react";
+
+const useCounter = (target: number, duration = 1500, start = false) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!start) {
+      setCount(0);
+      return;
+    }
+    let startTime: number | null = null;
+    const step = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(eased * target));
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, [start, target, duration]);
+
+  return count;
+};
+
+const StatItem = ({ n, l, suffix = "" }: { n: number; l: string; suffix?: string }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [started, setStarted] = useState(false);
+  const count = useCounter(n, 1500, started);
+
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setStarted(true);
+      } else {
+        setStarted(false);
+        setCount(0);
+      }
+    },
+    { threshold: 0.5 }
+  );
+  if (ref.current) observer.observe(ref.current);
+  return () => observer.disconnect();
+}, []);
+
+  return (
+    <div ref={ref}>
+      <div className="font-serif-display text-4xl text-ink">
+        {count}{suffix}
+      </div>
+      <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">{l}</div>
+    </div>
+  );
+};
 
 const About = () => {
   return (
@@ -38,16 +92,9 @@ const About = () => {
           </StaggerItem>
           <StaggerItem>
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-ink/15">
-              {[
-                { n: "4", l: "Days" },
-                { n: "120+", l: "Youth" },
-                { n: "01", l: "Pursuit" },
-              ].map((s) => (
-                <div key={s.l}>
-                  <div className="font-serif-display text-4xl text-ink">{s.n}</div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">{s.l}</div>
-                </div>
-              ))}
+              <StatItem n={4} l="Days" />
+              <StatItem n={100} l="Youth" suffix="+" />
+              <StatItem n={1} l="Pursuit" suffix="" />
             </div>
           </StaggerItem>
         </StaggerReveal>
