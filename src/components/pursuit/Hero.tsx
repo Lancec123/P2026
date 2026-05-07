@@ -1,8 +1,10 @@
 import heroImg from "@/assets/hero-meadow.png";
 import { useState } from "react";
+import { VerseGuess } from "@/components/pursuit/VerseGuess";
 
 const Hero = () => {
   const [verseOpen, setVerseOpen] = useState(false);
+  const [gameOpen, setGameOpen] = useState(false);
 
   return (
     <section id="top" className="relative min-h-[100svh] w-full overflow-hidden">
@@ -17,16 +19,29 @@ const Hero = () => {
       {/* Top corner labels */}
       <div className="relative z-10 container pt-24 flex justify-between text-xs uppercase tracking-[0.25em] text-ink/70">
         <span>Vol. 07 — Spring</span>
-        <button
-          onClick={() => setVerseOpen(true)}
-          className="relative uppercase tracking-[0.25em] text-ink/80 hover:text-ink transition-all cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-paper/90 shadow-soft rotate-[1.5deg] hover:rotate-0 text-[8px] md:text-xs whitespace-nowrap"
-        >
-          {/* Tape piece */}
-          <span className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-3 md:w-8 md:h-4 bg-orange-200/80 backdrop-blur-sm rotate-[-1deg] shadow-sm" 
-            style={{ clipPath: "polygon(2% 0%, 98% 2%, 97% 98%, 3% 100%)" }}
-          />
-          Colossians 2:6-7
-        </button>
+        <div className="flex flex-col items-end gap-3">
+          <button
+            onClick={() => setVerseOpen(true)}
+            className="relative uppercase tracking-[0.25em] text-ink/80 hover:text-ink transition-all cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-paper/90 shadow-soft rotate-[1.5deg] hover:rotate-0 text-[8px] md:text-xs whitespace-nowrap"
+          >
+            <span
+              className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-3 md:w-8 md:h-4 bg-orange-200/80 backdrop-blur-sm rotate-[-1deg] shadow-sm"
+              style={{ clipPath: "polygon(2% 0%, 98% 2%, 97% 98%, 3% 100%)" }}
+            />
+            Colossians 2:6-7
+          </button>
+          <button
+            onClick={() => setGameOpen(true)}
+            className="relative uppercase tracking-[0.25em] text-highlight hover:text-paper transition-all cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-ink/80 shadow-soft rotate-[-1deg] hover:rotate-0 text-[8px] md:text-xs whitespace-nowrap font-bold"
+            style={{ clipPath: "polygon(2% 8%, 98% 0%, 100% 92%, 96% 100%, 4% 96%, 0% 12%)" }}
+          >
+            <span
+              className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-3 md:w-8 md:h-4 bg-orange-200/80 backdrop-blur-sm rotate-[-1deg] shadow-sm"
+              style={{ clipPath: "polygon(2% 0%, 98% 2%, 97% 98%, 3% 100%)" }}
+            />
+            ✦ Verse Guess
+          </button>
+        </div>
       </div>
 
       {/* Verse Modal */}
@@ -35,10 +50,7 @@ const Hero = () => {
           className="fixed inset-0 z-50 flex items-center justify-center p-6"
           onClick={() => setVerseOpen(false)}
         >
-          {/* Backdrop */}
           <div className="absolute inset-0 bg-ink/40 backdrop-blur-sm" />
-
-          {/* Card */}
           <div
             className="relative max-w-md w-full bg-paper shadow-paper p-8 md:p-10 rotate-[-1deg]"
             style={{ clipPath: "polygon(1% 2%, 99% 0%, 100% 97%, 98% 100%, 1% 99%, 0% 3%)" }}
@@ -63,12 +75,15 @@ const Hero = () => {
         </div>
       )}
 
+      {/* Verse Guess Game Modal */}
+      {gameOpen && <VerseGuess onClose={() => setGameOpen(false)} />}
+
       {/* Center content */}
       <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] -mt-4 md:mt-0">
         <p className="font-hand text-2xl md:text-3xl text-highlight rotate-[-2deg]">
           Breaking Grounds —
         </p>
-        <h1 className="font-serif-display italic text-7xl md:text-[10rem] leading-[0.9]]">
+        <h1 className="font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] text-ink">
           Pursuit
         </h1>
         <div className="flex items-center gap-4 text-xs uppercase tracking-[0.3em] text-ink/80">
