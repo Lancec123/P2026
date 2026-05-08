@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const tabs = ["About", "Get Involved", "Schedule", "FAQ", "Parents", "Give"];
+const tabs = ["About", "Get Involved", "Schedule", "FAQ", "Parents", "Give", "TAP"];
 
 const slug = (t: string) => t.toLowerCase().replace(/\s+/g, "-");
 
@@ -107,8 +108,23 @@ const Nav = () => {
         {/* Desktop tabs */}
         <nav className="hidden md:flex items-center gap-1">
           {tabs.map((tab) => {
+            // TAP goes to another page
+            if (tab === "TAP") {
+              return (
+                <Link
+                  key={tab}
+                  to="/tap"
+                  className="px-4 py-2 text-sm uppercase tracking-wider text-foreground/70 hover:text-foreground transition-colors"
+                >
+                  {tab}
+                </Link>
+              );
+            }
+
+            // Normal scrolling tabs
             const id = slug(tab);
             const isActive = active === id;
+
             return (
               <a
                 key={tab}
@@ -119,9 +135,12 @@ const Nav = () => {
                 }`}
               >
                 {tab}
+
                 <span
                   className={`absolute left-4 right-4 bottom-1 h-px bg-ink origin-left transition-transform duration-500 ${
-                    isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                    isActive
+                      ? "scale-x-100"
+                      : "scale-x-0 group-hover:scale-x-100"
                   }`}
                 />
               </a>
