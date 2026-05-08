@@ -167,20 +167,6 @@ const Nav = () => {
           <div className="container py-4 flex flex-col gap-2">
             {tabs.map((tab) => {
               const id = slug(tab);
-
-              if (tab === "TAP") {
-                return (
-                  <Link
-                    key={tab}
-                    to="/tap"
-                    onClick={() => setOpen(false)}
-                    className="py-2 font-serif-display text-xl text-ink"
-                  >
-                    TAP
-                  </Link>
-                );
-              }
-
               return (
                 <a
                   key={tab}
