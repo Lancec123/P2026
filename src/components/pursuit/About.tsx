@@ -38,7 +38,6 @@ const StatItem = ({ n, l, suffix = "" }: { n: number; l: string; suffix?: string
         setStarted(true);
       } else {
         setStarted(false);
-        setCount(0);
       }
     },
     { threshold: 0.5 }
