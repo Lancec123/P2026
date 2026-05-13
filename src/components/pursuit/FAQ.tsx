@@ -17,13 +17,23 @@ const faqs = [
     a: "Absolutely! Pursuit welcomes individuals from all backgrounds and Christian denominations. We believe in fostering an inclusive and diverse community where participants can come together, learn from one another, and grow in their faith journey.",
   },
   {
-    q: "Are scholarships or financial assistance available?",
-    a: "Yes, we understand that financial circumstances can vary, and we offer scholarships and financial assistance to those who need it. Please reach out to Mar Jay Rigor (marjay.rigor@winontario.org) directly to discuss available options and the application process.",
+    q: "Is financial assistance available?",
+    a: "Yes, we understand that financial circumstances can vary, and we offer scholarships and financial assistance to those who need it. Please reach out to Pastor Mar Jay (marjay.rigor@winontario.org) directly to discuss available options and the application process.",
   },
   {
-    q: "What should I pack?",
-    a: "A Bible, pillow, blanket, extra clothes, toiletry and yourself!",
-  },
+  q: "What should I pack?",
+  a: (
+    <div className="space-y-1">
+      <p>• Bible</p>
+      <p>• Clothes (4 days, 3 nights)</p>
+      <p>• Personal medications</p>
+      <p>
+        • Swimwear | Towels | Toiletries | Bed sheet | Pillows |
+        Flash light | Bug spray | Sun block
+      </p>
+    </div>
+  ),
+},
   {
   q: "I have other questions, who can I ask about them?",
   a: (

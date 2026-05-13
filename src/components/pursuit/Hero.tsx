@@ -1,4 +1,4 @@
-import heroImg from "@/assets/hero-meadow.png";
+import heroImg from "@/assets/heroppl.jpg";
 import { useState } from "react";
 import { VerseGuess } from "@/components/pursuit/VerseGuess";
 
@@ -11,8 +11,8 @@ const Hero = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img src={heroImg} alt="Meadow with door illustration" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-paper/25" />
-        <div className="absolute inset-0 bg-gradient-to-b from-paper/40 via-transparent to-paper" />
+        <div className="absolute inset-0 bg-paper/5" />
+        <div className="absolute inset-0 bg-gradient-to-b from-paper/0 via-transparent to-paper" />
         <div className="absolute inset-0 vignette" />
       </div>
 
@@ -83,13 +83,22 @@ const Hero = () => {
         <p className="font-hand text-2xl md:text-3xl text-highlight rotate-[-2deg]">
           Breaking Grounds —
         </p>
-        <h1 className="font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] text-ink">
-          Pursuit
-        </h1>
+        <div className="relative inline-block">
+          <span className="absolute inset-0 bg-white/10 blur-2xl scale-110 rounded-full" />
+          
+          <h1 className="relative font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] text-ink">
+            Pursuit
+          </h1>
+        </div>
         <div className="flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] text-ink/80">
           <div className="flex items-center gap-4">
             <span className="h-px w-10 bg-ink/40" />
-            <span>Pearce Williams — 8009 Iona Rd, Fingal, ON</span>
+            <span className="relative font-bold px-1">
+            <span className="absolute inset-0 bg-white/10 blur-md scale-110 rounded-md" />
+            <span className="relative">
+              Pearce Williams — 8009 Iona Rd, Fingal, ON
+            </span>
+          </span>
             <span className="h-px w-10 bg-ink/40" />
           </div>
           <div className="flex items-center gap-4">
@@ -98,9 +107,11 @@ const Hero = () => {
             <span className="h-px w-10 bg-ink/40" />
           </div>
         </div>
-        <p className="max-w-xl font-serif-display text-lg md:text-xl text-ink/80 leading-relaxed mt-4">
-          Through dynamic worship, engaging activities, and authentic community, we seek to create a space where individuals can explore their faith, ask tough questions, and experience the unconditional love of Christ
-        </p>
+        <div className="bg-paper/18 backdrop-blur-[2px] px-0 py-12 rounded-sm">
+          <p className="max-w-xl font-serif-display text-lg md:text-xl text-ink/80 leading-relaxed mt-4">
+            More than just a youth camp - it’s a place where young people can unplug, connect, and grow closer to Jesus. Through worship, outdoor adventures, late-night conversations, and authentic community, we create lasting friendships and deepen our faith together.
+          </p>
+        </div>
         <div className="flex flex-wrap gap-3 justify-center mt-6">
           <a href="#register" className="px-7 py-3 bg-ink text-paper text-xs uppercase tracking-[0.25em] hover:bg-primary transition-colors">
             Save your spot

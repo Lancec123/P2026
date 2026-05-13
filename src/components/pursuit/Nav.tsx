@@ -91,17 +91,17 @@ const Nav = () => {
         scrolled ? "h-14 shadow-soft" : "h-16"
       }`}
     >
-      <div className="container flex items-center justify-between h-full">
+      <div className="w-full px-7 flex items-center justify-between h-full">
         {/* Torn paper logo */}
         <a href="#top" onClick={(e) => handleNav(e, "top")} className="flex items-center gap-2 group">
         <img
           src={`${import.meta.env.BASE_URL}pursuitbutton.png`}
           alt="Pursuit"
           className="-rotate-2 group-hover:rotate-0 transition-transform"
-          style={{ height: "38px", width: "auto" }}
+          style={{ height: "50px", width: "110px" }}
         />
         <span className="hidden sm:inline text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          Youth Retreat '26
+          Young People’s Retreat '26
         </span>
       </a>
 

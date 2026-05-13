@@ -30,9 +30,10 @@ const Footer = () => {
           <div className="font-serif-display italic text-2xl">Pursuit</div>
           <div className="flex flex-wrap gap-6 text-paper/60 text-xs uppercase tracking-[0.2em]">
             <a href="#about" className="hover:text-paper">About</a>
-            <a href="#get-involved" className="hover:text-paper">Get Involved</a>
+            <a href="#give" className="hover:text-paper">Give</a>
             <a href="#schedule" className="hover:text-paper">Schedule</a>
             <a href="#faq" className="hover:text-paper">FAQ</a>
+            <a href="#get-involved" className="hover:text-paper">Get Involved</a>
           </div>
           <div className="flex items-center gap-4">
             <a
@@ -53,7 +54,7 @@ const Footer = () => {
             >
               <Facebook size={26} strokeWidth={2.5} />
             </a>
-            <div className="text-paper/50 text-xs">© 2026 WIN Mississauga</div>
+            <div className="text-paper/50 text-xs">© 2026 WIN Ontario</div>
           </div>
         </div>
       </div>

@@ -86,13 +86,22 @@ const About = () => {
           </StaggerItem>
           <StaggerItem>
             <p className="text-lg text-ink/75 leading-relaxed">
-              Hosted by the Young People's Ministry (Torch) of Word International Ministries of Ontario.
+              Hosted by the Young People's Ministry (Torch) of{" "}
+              <a
+                href="https://winontario.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink underline underline-offset-2 hover:text-highlight transition-colors"
+              >
+                Word International Ministries of Ontario
+              </a>
+              .
             </p>
           </StaggerItem>
           <StaggerItem>
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-ink/15">
               <StatItem n={4} l="Days" />
-              <StatItem n={100} l="Youth" suffix="+" />
+              <StatItem n={100} l="Young People" suffix="+" />
               <StatItem n={1} l="Pursuit" suffix="" />
             </div>
           </StaggerItem>
