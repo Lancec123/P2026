@@ -122,86 +122,106 @@ const About = () => {
       </div>
 
       {/* Camp Fees */}
-      {/* Camp Fees */}
-<div className="container mt-24">
-  <StaggerReveal>
-    <StaggerItem>
-      <div className="border-t border-ink/15 pt-16">
-        <div className="grid lg:grid-cols-12 gap-12">
+      <div className="container mt-24">
+        <StaggerReveal>
+          <StaggerItem>
+            <div className="border-t border-ink/15 pt-16">
+              <div className="grid lg:grid-cols-12 gap-12">
 
-          {/* Label */}
-          <div className="lg:col-span-3">
-            <p className="text-sm uppercase tracking-[0.3em] text-ink font-bold mb-4">Registration</p>
-            <div className="font-hand text-highlight text-5xl rotate-[-2deg] mb-6">camp fees</div>
-            <div className="bg-grass-deep text-paper p-6 shadow-paper rotate-[-1deg]">
-              <p className="text-xs uppercase tracking-[0.2em] text-paper/50 mb-2">Cost per person</p>
-              <p className="font-serif-display italic text-6xl text-paper">$90</p>
-              <p className="text-xs text-paper/50 mt-2 uppercase tracking-[0.15em]">All-inclusive</p>
-            </div>
-          </div>
-
-          {/* Content */}
-          <div className="lg:col-span-7 lg:col-start-5 space-y-8">
-            <p className="text-lg text-ink/75 leading-relaxed border-l-2 border-highlight pl-4">
-              Payment will be collected via Interac e-Transfer. Please follow the steps below to send your payment.
-            </p>
-
-            {/* Steps */}
-            <div className="space-y-0 border border-ink/15">
-              {[
-                { label: "Recipient", content: <><a href="mailto:pursuit@winontario.org" className="text-ink font-medium underline underline-offset-2 hover:text-highlight transition-colors">pursuit@winontario.org</a></> },
-                { label: "Amount", content: <span className="font-serif-display text-ink text-2xl">$90</span> },
-                { label: "Message", content: <span className="font-mono bg-ink/5 px-2 py-0.5 text-ink text-sm border border-ink/10">PC26 + your first and last name</span> },
-              ].map((step, i) => (
-                <div key={i} className="flex gap-0 items-stretch border-b border-ink/15 last:border-b-0">
-                  <div className="bg-ink/5 px-4 py-5 flex items-center justify-center w-12 shrink-0">
-                    <span className="font-serif-display italic text-ink/40 text-lg">{i + 1}</span>
-                  </div>
-                  <div className="px-6 py-5 flex items-center gap-4 flex-1">
-                    <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground w-20 shrink-0">{step.label}</span>
-                    <div className="text-ink/80">{step.content}</div>
+                {/* Label */}
+                <div className="lg:col-span-3">
+                  <p className="text-sm uppercase tracking-[0.3em] text-ink font-bold mb-4">Registration</p>
+                  <div className="font-hand text-highlight text-5xl rotate-[-2deg] mb-6">camp fees</div>
+                  <div className="bg-grass-deep text-paper p-6 shadow-paper rotate-[-1deg] max-w-[200px]">
+                    <p className="text-xs uppercase tracking-[0.2em] text-paper/50 mb-2">Cost per person</p>
+                    <p className="font-serif-display italic text-6xl text-paper">$90</p>
+                    <p className="text-xs text-paper/50 mt-2 uppercase tracking-[0.15em]">All-inclusive</p>
                   </div>
                 </div>
-              ))}
-            </div>
 
-            {/* Note */}
-            <div className="relative">
-              <span className="absolute -top-3 left-6 w-10 h-3 bg-orange-200/80 rotate-[-1deg] z-10"
-                style={{ clipPath: "polygon(2% 0%, 98% 2%, 97% 98%, 3% 100%)" }}
-              />
-              <div
-                className="bg-paper shadow-paper p-6 rotate-[-0.5deg] border border-ink/10"
-                style={{ clipPath: "polygon(1% 2%, 99% 0%, 100% 97%, 98% 100%, 1% 99%, 0% 3%)" }}
-              >
-                <p className="text-ink/70 leading-relaxed text-sm">
-                  For parents or guardians paying on behalf of their child, please input your child's name in the message field.
-                </p>
-                <p className="text-ink/40 text-xs mt-3 font-mono tracking-wide">Example: PC26 John Doe</p>
-              </div>
-            </div>
+                {/* Content */}
+                <div className="lg:col-span-7 lg:col-start-5 space-y-8">
+                  <p className="text-lg text-ink/75 leading-relaxed border-l-2 border-highlight pl-4">
+                    Payment will be collected via Interac e-Transfer. Please follow the steps below to send your payment.
+                  </p>
 
-            {/* Contact */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-t border-ink/15 pt-6">
-              <div>
-                <p className="text-sm text-muted-foreground mb-1">Questions or issues with payment?</p>
-                <a
-                  href="mailto:marjay.rigor@winontario.org"
-                  className="font-serif-display italic text-2xl text-ink hover:text-highlight transition-colors"
-                >
-                  marjay.rigor@winontario.org →
-                </a>
-              </div>
-              <div className="shrink-0">
-                <span className="font-hand text-highlight text-xl rotate-[1deg] inline-block">we got you —</span>
+                  {/* Steps */}
+                  <div className="border border-ink/15 overflow-hidden">
+                    {[
+                      {
+                        label: "Recipient",
+                        content: (
+                          <a
+                            href="mailto:pursuit@winontario.org"
+                            className="text-ink font-medium underline underline-offset-2 hover:text-highlight transition-colors break-all"
+                          >
+                            pursuit@winontario.org
+                          </a>
+                        ),
+                      },
+                      {
+                        label: "Amount",
+                        content: <span className="font-serif-display text-ink text-2xl">$90</span>,
+                      },
+                      {
+                        label: "Message",
+                        content: (
+                          <span className="font-mono bg-ink/5 px-2 py-0.5 text-ink text-xs border border-ink/10 break-all">
+                            PC26 + your first and last name
+                          </span>
+                        ),
+                      },
+                    ].map((step, i) => (
+                      <div key={i} className="flex items-stretch border-b border-ink/15 last:border-b-0">
+                        <div className="bg-ink/5 px-3 py-4 flex items-center justify-center w-10 shrink-0">
+                          <span className="font-serif-display italic text-ink/40 text-lg">{i + 1}</span>
+                        </div>
+                        <div className="px-4 py-4 flex flex-col sm:flex-row sm:items-center gap-2 flex-1 min-w-0">
+                          <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground sm:w-20 shrink-0">{step.label}</span>
+                          <div className="text-ink/80 min-w-0 overflow-hidden">{step.content}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Note */}
+                  <div className="relative">
+                    <span
+                      className="absolute -top-3 left-6 w-10 h-3 bg-orange-200/80 rotate-[-1deg] z-10"
+                      style={{ clipPath: "polygon(2% 0%, 98% 2%, 97% 98%, 3% 100%)" }}
+                    />
+                    <div
+                      className="bg-paper shadow-paper p-6 border border-ink/10"
+                      style={{ clipPath: "polygon(1% 2%, 99% 0%, 100% 97%, 98% 100%, 1% 99%, 0% 3%)" }}
+                    >
+                      <p className="text-ink/70 leading-relaxed text-sm">
+                        For parents or guardians paying on behalf of their child, please input your child's name in the message field.
+                      </p>
+                      <p className="text-ink/40 text-xs mt-3 font-mono tracking-wide">Example: PC26 John Doe</p>
+                    </div>
+                  </div>
+
+                  {/* Contact */}
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-t border-ink/15 pt-6">
+                    <div className="min-w-0">
+                      <p className="text-sm text-muted-foreground mb-1">Questions or issues with payment?</p>
+                      <a
+                        href="mailto:marjay.rigor@winontario.org"
+                        className="font-serif-display italic text-xl md:text-2xl text-ink hover:text-highlight transition-colors break-all"
+                      >
+                        marjay.rigor@winontario.org →
+                      </a>
+                    </div>
+                    <div className="shrink-0">
+                      <span className="font-hand text-highlight text-xl rotate-[1deg] inline-block">we got you —</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </StaggerItem>
+        </StaggerReveal>
       </div>
-    </StaggerItem>
-  </StaggerReveal>
-</div>
     </section>
   );
 };
