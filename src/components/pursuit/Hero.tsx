@@ -107,7 +107,7 @@ const Hero = () => {
             <span className="h-px w-10 bg-ink/40" />
           </div>
         </div>
-        <div className="bg-paper/18 backdrop-blur-[2px] px-0 py-12 rounded-sm">
+        <div className="bg-paper/18 backdrop-blur-[2px] px-0 py-6 md:py-12 rounded-sm">
           <p className="max-w-xl font-serif-display text-lg md:text-xl text-ink/80 leading-relaxed mt-4">
             More than just a youth camp - it’s a place where young people can unplug, connect, and grow closer to Jesus. Through worship, outdoor adventures, late-night conversations, and authentic community, we create lasting friendships and deepen our faith together.
           </p>
