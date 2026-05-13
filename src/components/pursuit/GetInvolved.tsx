@@ -1,4 +1,3 @@
-import pathImg from "@/assets/right-path.png";
 import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 
 const roles = [
@@ -21,17 +20,12 @@ const roles = [
 
 const GetInvolved = () => {
   return (
-    <section id="get-involved" className="relative py-32 bg-grass-deep text-paper overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0 opacity-25">
-        <img src={pathImg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-grass-deep/60" />
-      </div>
-      <div className="relative container">
+    <section id="get-involved" className="relative py-32 paper-texture">
+      <div className="container">
         <StaggerReveal className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
           <StaggerItem>
-            <p className="text-xs uppercase tracking-[0.3em] text-paper/60 mb-4">02 — Get Involved</p>
-            <h2 className="font-serif-display text-5xl md:text-7xl leading-[1] max-w-2xl">
+            <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">05 — Get Involved</p>
+            <h2 className="font-serif-display text-5xl md:text-7xl leading-[1] max-w-2xl text-ink">
               Volunteers make <span className="italic">Pursuit</span> happen.
             </h2>
           </StaggerItem>
@@ -45,26 +39,24 @@ const GetInvolved = () => {
         <StaggerReveal className="grid md:grid-cols-2 gap-6">
           {roles.map((r, i) => (
             <StaggerItem key={r.title}>
-              <div className="group relative p-8 border border-paper/20 hover:border-paper/50 transition-colors backdrop-blur-sm bg-paper/5 h-full">
+              <div className="group relative p-8 border border-ink/15 hover:border-ink/40 transition-colors h-full">
                 <div className="flex items-start justify-between mb-6">
-                  <span className="font-serif-display italic text-paper/40 text-2xl">0{i + 1}</span>
-                  <span className="text-[10px] uppercase tracking-[0.2em] text-paper/60 border border-paper/30 px-3 py-1">
+                  <span className="font-serif-display italic text-ink/30 text-2xl">0{i + 1}</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground border border-ink/20 px-3 py-1">
                     {r.commit}
                   </span>
                 </div>
-                <h3 className="font-serif-display text-3xl mb-3">{r.title}</h3>
-                <p className="text-paper/75 leading-relaxed">{r.desc}</p>
+                <h3 className="font-serif-display text-3xl text-ink mb-3">{r.title}</h3>
+                <p className="text-ink/70 leading-relaxed">{r.desc}</p>
                 <a
                   href={r.title === "Become a Torch Ambassador" ? "#" : "#register"}
                   onClick={(e) => {
-                    if (r.title === "Become a Torch Ambassador") {
-                      e.preventDefault();
-                    }
+                    if (r.title === "Become a Torch Ambassador") e.preventDefault();
                   }}
                   className={`inline-flex items-center gap-2 mt-6 text-sm uppercase tracking-[0.2em] transition-colors ${
                     r.title === "Become a Torch Ambassador"
-                      ? "text-paper/50 hover:text-paper/50"
-                      : "text-paper/90 group-hover:text-highlight"
+                      ? "text-ink/30 hover:text-ink/30"
+                      : "text-ink/70 group-hover:text-highlight"
                   }`}
                 >
                   {r.title === "Pray"
@@ -72,14 +64,7 @@ const GetInvolved = () => {
                     : r.title === "Become a Torch Ambassador"
                     ? "Coming Soon!"
                     : "Apply"}
-
-                  <span
-                    className={`transition-transform ${
-                      r.title === "Become a Torch Ambassador"
-                        ? ""
-                        : "group-hover:translate-x-1"
-                    }`}
-                  >
+                  <span className={`transition-transform ${r.title === "Become a Torch Ambassador" ? "" : "group-hover:translate-x-1"}`}>
                     →
                   </span>
                 </a>
