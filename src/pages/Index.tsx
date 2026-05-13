@@ -14,9 +14,10 @@ const Index = () => {
       <Nav />
       <Hero />
       <About />
-      <GetInvolved />
+      <Give />
       <Schedule />
       <FAQ />
+      <GetInvolved />
       <Give />
       <Footer />
     </main>
