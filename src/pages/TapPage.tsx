@@ -262,7 +262,7 @@ const TapPage = () => {
                         <span className="font-serif-display italic text-paper/25 text-xl shrink-0 w-6">{i + 1}</span>
                         <p className="text-paper/70 leading-relaxed">
                           {i === 3 ? (
-                            <>For recipient, input: <a href="mailto:finance@winontario.org" className="text-highlight underline underline-offset-2 hover:opacity-80 transition-opacity">finance@winontario.org</a></>
+                            <>For recipient, input: <a href="mailto:give2torch@winontario.org" className="text-highlight underline underline-offset-2 hover:opacity-80 transition-opacity">give2torch@winontario.org</a></>
                           ) : i === 4 ? (
                             <>In the note field, input: <span className="font-mono bg-paper/10 px-2 py-0.5 text-paper font-bold">TAP – Ambassador Name</span></>
                           ) : step}
@@ -281,12 +281,12 @@ const TapPage = () => {
                     <p className="font-hand text-highlight text-2xl mb-3">option two —</p>
                     <h3 className="font-serif-display text-3xl text-paper">Give Online</h3>
                     <p className="text-paper/70 leading-relaxed mt-4">
-                      Select "Pursuit Camp – General" and choose the Torch Ambassador you are supporting to give directly through Subsplash.
+                      Prefer to give by credit or debit card? Use our secure online giving portal.
                     </p>
                   </div>
                   <div className="space-y-4">
                     <a
-                      href="https://subsplash.com/+jzgj/give"
+                      href="https://www.winontario.org/give2torch/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full text-center px-8 py-4 bg-highlight text-ink text-xs uppercase tracking-[0.3em] hover:opacity-90 transition-opacity font-bold"

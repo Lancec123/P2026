@@ -63,18 +63,7 @@ const Parents = () => {
           ))}
         </StaggerReveal>
 
-        <StaggerReveal className="mt-16 border-t border-ink/15 pt-10">
-          <StaggerItem>
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-              <div>
-                <p className="font-serif-display italic text-2xl text-ink mb-1">Still have questions?</p>
-                <p className="text-ink/60 text-sm">We are happy to chat before you register your child.</p>
-              </div>
-              
-                <a href="mailto:idkthechurchemail@church.org" className="inline-block px-8 py-3 border border-ink/30 text-ink text-xs uppercase tracking-[0.2em] hover:bg-ink hover:text-paper transition-colors">Contact Us</a>
-            </div>
-          </StaggerItem>
-        </StaggerReveal>
+        
       </div>
     </section>
   );

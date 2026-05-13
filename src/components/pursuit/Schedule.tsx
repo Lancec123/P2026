@@ -54,7 +54,7 @@ const Schedule = () => {
       <div className="container">
         <StaggerReveal className="grid lg:grid-cols-12 gap-12 mb-16">
           <StaggerItem className="lg:col-span-5">
-            <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">03 — Schedule</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">03 — Schedule / Shuttle Bus Info</p>
             <h2 className="font-serif-display text-5xl md:text-7xl leading-[1] text-ink">
               Four days, <br /><span className="italic">unhurried.</span>
             </h2>
