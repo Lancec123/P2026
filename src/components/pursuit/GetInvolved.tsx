@@ -55,17 +55,33 @@ const GetInvolved = () => {
                 <h3 className="font-serif-display text-3xl mb-3">{r.title}</h3>
                 <p className="text-paper/75 leading-relaxed">{r.desc}</p>
                 <a
-                  href={
+                  href={r.title === "Become a Torch Ambassador" ? "#" : "#register"}
+                  onClick={(e) => {
+                    if (r.title === "Become a Torch Ambassador") {
+                      e.preventDefault();
+                    }
+                  }}
+                  className={`inline-flex items-center gap-2 mt-6 text-sm uppercase tracking-[0.2em] transition-colors ${
                     r.title === "Become a Torch Ambassador"
-                      ? "/tap"
-                      : "#register"
-                  }
-                  className="inline-flex items-center gap-2 mt-6 text-sm uppercase tracking-[0.2em] text-paper/90 group-hover:text-highlight transition-colors"
+                      ? "text-paper/50 hover:text-paper/50"
+                      : "text-paper/90 group-hover:text-highlight"
+                  }`}
                 >
                   {r.title === "Pray"
                     ? "Submit Prayer Request"
+                    : r.title === "Become a Torch Ambassador"
+                    ? "Coming Soon!"
                     : "Apply"}
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
+
+                  <span
+                    className={`transition-transform ${
+                      r.title === "Become a Torch Ambassador"
+                        ? ""
+                        : "group-hover:translate-x-1"
+                    }`}
+                  >
+                    →
+                  </span>
                 </a>
               </div>
             </StaggerItem>
