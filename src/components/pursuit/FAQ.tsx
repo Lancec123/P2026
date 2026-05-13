@@ -4,11 +4,49 @@ import campBg from "@/assets/camp-background.jpg";
 import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 
 const faqs = [
-  { q: "Who can come?", a: "Pursuit is open to all Youth. Feel free to bring a friend and grow together! — that's kind of the point :]" },
-  { q: "How much does it cost?", a: "$1 per student, all-in. This covers lodging, all meals, and materials." },
-  { q: "Where is it?", a: "Pearce Williams 8009 Iona Rd, Fingal, ON N0L 1K0" },
-  { q: "What should I pack?", a: "A Bible, pillow, blanket, extra clothes, toiletry and yourself!" },
-  { q: "Can parents volunteer?", a: "Yes!" },
+  {
+    q: "What age group is the camp designed for?",
+    a: "Pursuit Camp is designed for young people between the ages of 12 and 22. We create an environment where participants can connect, grow, and deepen their relationship with Jesus Christ.",
+  },
+  {
+    q: "What activities can campers expect during their time at Pursuit?",
+    a: "Campers can look forward to engaging activities such as dynamic worship services, thought-provoking teaching sessions, small group discussions, outdoor adventures, community-building activities, and more. Our goal is to create a well-rounded and impactful experience for all participants.",
+  },
+  {
+    q: "Is the camp open to individuals from all Christian denominations?",
+    a: "Absolutely! Pursuit welcomes individuals from all backgrounds and Christian denominations. We believe in fostering an inclusive and diverse community where participants can come together, learn from one another, and grow in their faith journey.",
+  },
+  {
+    q: "Are scholarships or financial assistance available?",
+    a: "Yes, we understand that financial circumstances can vary, and we offer scholarships and financial assistance to those who need it. Please reach out to Mar Jay Rigor (marjay.rigor@winontario.org) directly to discuss available options and the application process.",
+  },
+  {
+    q: "What should I pack?",
+    a: "A Bible, pillow, blanket, extra clothes, toiletry and yourself!",
+  },
+  {
+  q: "I have other questions, who can I ask about them?",
+  a: (
+    <>
+      Please contact{" "}
+      <a
+        href="mailto:marjay.rigor@winontario.org"
+        className="underline hover:opacity-70"
+      >
+        marjay.rigor@winontario.org
+      </a>{" "}
+      or{" "}
+      <a
+        href="mailto:cali.mendoza@winontario.org"
+        className="underline hover:opacity-70"
+      >
+        cali.mendoza@winontario.org
+      </a>
+      . Feel free to also contact us through the social media accounts we have
+      listed below.
+    </>
+  ),
+}
 ];
 
 const FAQ = () => {
@@ -39,14 +77,6 @@ const FAQ = () => {
               <div className="aspect-[3/4] shadow-paper rotate-[3deg] overflow-hidden mt-8">
                 <img src={typoImg} alt="" className="w-full h-full object-cover" />
               </div>
-            </div>
-          </StaggerItem>
-          <StaggerItem>
-            <div className="border-t border-paper/20 pt-6">
-              <p className="text-sm text-paper/50 mb-2">Still wondering something?</p>
-              <a href="mailto:idkthechurchemail@church.org" className="font-serif-display italic text-2xl text-paper hover:text-highlight transition-colors">
-                idkthechurchemail@church.org →
-              </a>
             </div>
           </StaggerItem>
         </StaggerReveal>

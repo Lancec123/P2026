@@ -22,7 +22,7 @@ const Give = () => {
           </StaggerItem>
           <StaggerItem className="lg:col-span-5 lg:col-start-8 flex items-end">
             <p className="text-lg text-ink/70 leading-relaxed">
-              We are grateful for every dollar given. Your generosity is what makes Pursuit possible.
+              Join us in our mission to make a difference in the lives of youth and young adults. Help ensure that camp fees remain at $90 – much lower than the typical cost of $250+ per camper, enabling more young people to participate and experience the transformative power of God’s love.
             </p>
           </StaggerItem>
         </StaggerReveal>
@@ -45,8 +45,8 @@ const Give = () => {
                         {i === 3 ? (
                           <>
                             For recipient, input:{" "}
-                            <a href="mailto:finance@winontario.org" className="text-ink underline underline-offset-2 hover:text-highlight transition-colors">
-                              finance@winontario.org
+                            <a href="mailto:give2torch@winontario.org" className="text-ink underline underline-offset-2 hover:text-highlight transition-colors">
+                              give2torch@winontario.org
                             </a>
                           </>
                         ) : i === 4 ? (
@@ -73,12 +73,12 @@ const Give = () => {
                   <p className="font-hand text-highlight text-2xl rotate-[-1deg] mb-3">option two —</p>
                   <h3 className="font-serif-display text-3xl md:text-4xl text-ink">Give Online</h3>
                   <p className="text-ink/70 leading-relaxed mt-4">
-                    Prefer to give online? You can securely donate through our Subsplash giving page. Quick, safe, and easy.
+                    Prefer to give by credit or debit card? Use our secure online giving portal.
                   </p>
                 </div>
                 <div className="space-y-4">
                   <a
-                    href="https://subsplash.com/+jzgj/give"
+                    href="https://www.winontario.org/give2torch/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full text-center px-8 py-4 bg-ink text-paper text-xs uppercase tracking-[0.3em] hover:bg-primary transition-colors"

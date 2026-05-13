@@ -3,24 +3,19 @@ import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 
 const roles = [
   {
-    title: " Group Leader",
-    desc: "Be the group leader, help lead your team through games, prayers making sure everyone has fun!",
-    commit: "Full retreat",
+    title: "Volunteer",
+    desc: "Have a heart to serve and a desire to help young people grow in their faith? Join our team of camp volunteers dedicated to make a difference in the lives of young people.",
+    commit: "Volunteer Fee: $30.00",
   },
   {
-    title: "Media Team",
-    desc: "Support the Media team by helping with slideshows, recordings, pictures and more!",
-    commit: "Full retreat",
+    title: "Become a Torch Ambassador",
+    desc: "Make a meaningful impact beyond your church community by engaging in various fundraising efforts to support our camp activities and achieve our goal of $10,000.",
+    commit: "Sign Up",
   },
   {
-    title: "Kitchen Crew",
-    desc: "Assist with the cleaning, preparing plates and making sure everyone's bellys are happy :]",
-    commit: "Day shifts",
-  },
-  {
-    title: "Technical Team",
-    desc: "Help with all the techy stuff! Like lights, monitors anything techy!",
-    commit: "Setup + teardown",
+    title: "Pray",
+    desc: "Your prayers support our young people as they grow in faith and serve their communities. Join our email list of prayer warriors and intercede as prayer requests come through and camp draws near.",
+    commit: "",
   },
 ];
 

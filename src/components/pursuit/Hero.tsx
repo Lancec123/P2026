@@ -86,10 +86,17 @@ const Hero = () => {
         <h1 className="font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] text-ink">
           Pursuit
         </h1>
-        <div className="flex items-center gap-4 text-xs uppercase tracking-[0.3em] text-ink/80">
-          <span className="h-px w-10 bg-ink/40" />
-          <span>PEARCE WILLIAMS April 18 — 18, 2026</span>
-          <span className="h-px w-10 bg-ink/40" />
+        <div className="flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] text-ink/80">
+          <div className="flex items-center gap-4">
+            <span className="h-px w-10 bg-ink/40" />
+            <span>Pearce Williams — 8009 Iona Rd, Fingal, ON</span>
+            <span className="h-px w-10 bg-ink/40" />
+          </div>
+          <div className="flex items-center gap-4">
+            <span className="h-px w-10 bg-ink/40" />
+            <span className="font-bold">September 4 – 7, 2026</span>
+            <span className="h-px w-10 bg-ink/40" />
+          </div>
         </div>
         <p className="max-w-xl font-serif-display text-lg md:text-xl text-ink/80 leading-relaxed mt-4">
           Through dynamic worship, engaging activities, and authentic community, we seek to create a space where individuals can explore their faith, ask tough questions, and experience the unconditional love of Christ

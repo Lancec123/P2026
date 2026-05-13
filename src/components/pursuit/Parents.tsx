@@ -7,11 +7,7 @@ const disclaimers = [
   },
   {
     title: "Supervision",
-    body: "Students will be supervised by trained and vetted adult leaders at all times. Male and female leaders are present throughout the retreat. Cabins are gender-separated and leaders conduct regular check-ins.",
-  },
-  {
-    title: "Code of Conduct",
-    body: "All attendees are expected to treat others with respect and kindness. Any behaviour deemed harmful or disruptive may result in a student being sent home at the parent's expense. We want this to be a safe space for everyone.",
+    body: "Youth will be supervised by trained and vetted adult leaders at all times. Male and female leaders are present throughout the retreat. Cabins are gender-separated and leaders conduct regular check-ins.",
   },
   {
     title: "Photography & Media",
@@ -20,10 +16,6 @@ const disclaimers = [
   {
     title: "Transportation",
     body: "Drop-off and pick-up times will be communicated closer to the retreat date.",
-  },
-  {
-    title: "Refund Policy",
-    body: "Registration fees are non-refundable after April 1, 2026. In the event the retreat is cancelled by the church, a full refund will be issued. For extenuating circumstances, please contact us directly.",
   },
 ];
 

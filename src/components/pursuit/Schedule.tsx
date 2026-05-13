@@ -4,50 +4,48 @@ import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 const days = [
   {
     day: "Day 01",
-    date: "Sat / July 18",
-    title: "Arrival & First Fire",
+    date: "Fri / September 4, 2026",
+    title: "Arrival",
     items: [
-      ["3:00 PM", "Check-in & cabin assignments"],
-      ["5:30 PM", "Opening dinner"],
-      ["7:30 PM", "Welcome session"],
-      ["9:30 PM", "Bonfire & worship"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
     ],
   },
   {
     day: "Day 02",
-    date: "Sun / July 19",
-    title: "Stillness",
+    date: "Sat / September 5, 2026",
+    title: "Day Two",
     items: [
-      ["7:30 AM", "Quiet morning walk"],
-      ["9:00 AM", "Breakfast"],
-      ["10:30 AM", "Main Events"],
-      ["2:00 PM", "Free afternoon"],
-      ["7:00 PM", "Dinner"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
     ],
   },
   {
     day: "Day 03",
-    date: "Mon / July 20",
-    title: "Growth",
+    date: "Sun / September 6, 2026",
+    title: "Day Three",
     items: [
-      ["8:00 AM", "Breakfast"],
-      ["9:30 AM", "Worship"],
-      ["1:00 PM", "Prayer groups"],
-      ["7:00 PM", "Dinner"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
     ],
   },
   {
     day: "Day 04",
-    date: "Tue / July 21",
-    title: "Together",
+    date: "Mon / September 7, 2026",
+    title: "Closing Day",
     items: [
-      ["9:00 AM", "Breakfast & worship"],
-      ["11:00 AM", "Service project"],
-      ["6:00 PM", "Closing feast"],
-      ["9:00 PM", "Last fire"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
+      ["TBA", "TBA"],
     ],
   },
-  
 ];
 
 const Schedule = () => {
@@ -58,7 +56,7 @@ const Schedule = () => {
           <StaggerItem className="lg:col-span-5">
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">03 — Schedule</p>
             <h2 className="font-serif-display text-5xl md:text-7xl leading-[1] text-ink">
-              Five days, <br /><span className="italic">unhurried.</span>
+              Four days, <br /><span className="italic">unhurried.</span>
             </h2>
           </StaggerItem>
           <StaggerItem className="lg:col-span-4 lg:col-start-9">
