@@ -217,7 +217,7 @@ const Give = () => {
 
                 <div className="space-y-4">
                   <a
-                    href="https://subsplash.com/u/-D56TVS/give?frequency=once&next_process_date=05/13/2026"
+                    href="https://subsplash.com/u/-D56TVS/give?frequency=once&next_process_date=05/13/2026&campus_id=943911e5-9ccd-4da4-9933-9894411c7bcc&fund_id=c59f474c-feba-44a4-aeef-739dcc6c1172"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full text-center px-8 py-4 bg-ink text-paper text-xs uppercase tracking-[0.3em] hover:bg-primary transition-colors"
