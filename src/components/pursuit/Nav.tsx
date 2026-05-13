@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const tabs = ["About", "Get Involved", "Schedule", "FAQ", "Parents", "Give"];
+const tabs = ["About", "Get Involved", "Schedule", "FAQ", "Give"];
 
 const slug = (t: string) => t.toLowerCase().replace(/\s+/g, "-");
 

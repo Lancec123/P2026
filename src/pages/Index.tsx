@@ -17,7 +17,6 @@ const Index = () => {
       <GetInvolved />
       <Schedule />
       <FAQ />
-      <Parents />
       <Give />
       <Footer />
     </main>
