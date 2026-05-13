@@ -55,10 +55,16 @@ const GetInvolved = () => {
                 <h3 className="font-serif-display text-3xl mb-3">{r.title}</h3>
                 <p className="text-paper/75 leading-relaxed">{r.desc}</p>
                 <a
-                  href="#register"
+                  href={
+                    r.title === "Become a Torch Ambassador"
+                      ? "/tap"
+                      : "#register"
+                  }
                   className="inline-flex items-center gap-2 mt-6 text-sm uppercase tracking-[0.2em] text-paper/90 group-hover:text-highlight transition-colors"
                 >
-                  {r.title === "Pray" ? "Submit Prayer Request" : "Apply"}
+                  {r.title === "Pray"
+                    ? "Submit Prayer Request"
+                    : "Apply"}
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
               </div>
