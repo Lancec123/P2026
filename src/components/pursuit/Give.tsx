@@ -217,7 +217,7 @@ const Give = () => {
 
                 <div className="space-y-4">
                   <a
-                    href="https://www.winontario.org/give2torch/"
+                    href="https://subsplash.com/u/-D56TVS/give?frequency=once&next_process_date=05/13/2026"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full text-center px-8 py-4 bg-ink text-paper text-xs uppercase tracking-[0.3em] hover:bg-primary transition-colors"
