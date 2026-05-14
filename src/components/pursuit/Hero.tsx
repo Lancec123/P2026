@@ -12,16 +12,16 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img src={heroImg} alt="Pursuit camp" className="w-full h-full object-cover object-[70%_center] md:object-center" />
         <div className="absolute inset-0 bg-paper/5" />
-        <div className="absolute inset-0 bg-gradient-to-b from-paper/20 via-transparent to-paper" />
+        <div className="absolute inset-0 bg-gradient-to-b from-paper/20 via-transparent to-paper/90" />
         <div className="absolute inset-0 vignette" />
       </div>
 
-      {/* White glow behind text — works on all devices */}
+      {/* White glow behind text */}
       <div className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] md:w-[70vw] h-[60vh]"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] md:w-[70vw] h-[70vh] md:h-[60vh]"
           style={{
-            background: "radial-gradient(ellipse at center, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.25) 40%, transparent 75%)",
+            background: "radial-gradient(ellipse at center, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.55) 35%, rgba(255,255,255,0.2) 60%, transparent 80%)",
           }}
         />
       </div>
@@ -95,17 +95,17 @@ const Hero = () => {
       {/* Center content */}
       <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] pb-24 mt-8 md:mt-0">
 
-        <p className="font-hand text-2xl md:text-3xl text-highlight rotate-[-2deg]">
+        <p className="font-hand text-2xl md:text-3xl text-highlight rotate-[-2deg] drop-shadow-sm">
           Breaking Ground —
         </p>
 
         <div className="relative inline-block mt-2">
-          <h1 className="relative font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] text-ink">
+          <h1 className="relative font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] text-ink drop-shadow-sm">
             Pursuit
           </h1>
         </div>
 
-        <div className="flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] text-ink/80 mt-4">
+        <div className="flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] text-ink mt-4">
           <div className="flex items-center gap-2 md:gap-4">
             <span className="h-px w-6 md:w-10 bg-ink/40" />
             <span className="font-bold text-center leading-relaxed">
@@ -121,7 +121,7 @@ const Hero = () => {
         </div>
 
         <div className="mt-6 px-2 md:px-0">
-          <p className="max-w-xl mx-auto font-serif-display text-lg md:text-xl text-ink/80 leading-relaxed">
+          <p className="max-w-xl mx-auto font-serif-display text-lg md:text-xl text-ink leading-relaxed">
             More than just a youth camp — a place where young people can unplug, connect, and grow closer to Jesus. Through worship, outdoor adventures, late-night conversations, and authentic community, we create lasting friendships and deepen our faith together.
           </p>
         </div>
