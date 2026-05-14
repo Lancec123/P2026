@@ -1,4 +1,4 @@
-import heroImg from "@/assets/heroppl.jpg";
+import heroImg from "@/assets/heroppl2.jpg";
 import { useState } from "react";
 import { VerseGuess } from "@/components/pursuit/VerseGuess";
 
