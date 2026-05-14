@@ -79,7 +79,7 @@ const Hero = () => {
       {gameOpen && <VerseGuess onClose={() => setGameOpen(false)} />}
 
       {/* Center content */}
-        <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] -mt-4 md:mt-0">
+        <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] pb-24 -mt-4 md:mt-0">
 
           {/* dreamy cloud glow layer (FULL BACKGROUND FIELD) */}
             <div className="pointer-events-none absolute inset-0 -z-10">
