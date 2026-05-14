@@ -10,7 +10,7 @@ const Hero = () => {
     <section id="top" className="relative min-h-[100svh] w-full overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Pursuit camp" className="w-full h-full object-cover" />
+        <img src={heroImg} alt="Pursuit camp" className="w-full h-full object-cover object-[70%_center] md:object-center" />
         <div className="absolute inset-0 bg-paper/5" />
         <div className="absolute inset-0 bg-gradient-to-b from-paper/20 via-transparent to-paper" />
         <div className="absolute inset-0 vignette" />
