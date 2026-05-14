@@ -132,8 +132,8 @@ const Hero = () => {
           </div>
 
           {/* Description box */}
-          <div className="bg-paper/18 backdrop-blur-[2px] px-0 py-6 md:py-12 rounded-sm mt-6">
-            <p className="max-w-xl font-serif-display text-lg md:text-xl text-ink/80 leading-relaxed mt-4">
+          <div className="mt-6 px-2 md:px-0">
+            <p className="max-w-xl mx-auto font-serif-display text-lg md:text-xl text-ink/80 leading-relaxed">
               More than just a youth camp - it’s a place where young people can unplug, connect, and grow closer to Jesus. Through worship, outdoor adventures, late-night conversations, and authentic community, we create lasting friendships and deepen our faith together.
             </p>
           </div>
