@@ -15,13 +15,12 @@ const Footer = () => {
           Breaking Ground.
         </h2>
         <a
-          href="https://forms.example.com"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdSF6MZLWDCLvZZCi4d5QT0RmfyyWG_hRHICWqi03kftWSwBQ/viewform"
           className="inline-block px-10 py-4 bg-ink text-paper text-xs uppercase tracking-[0.3em] hover:bg-primary transition-colors shadow-paper"
         >
           Register for Pursuit ’26
         </a>
         <p className="mt-6 text-sm text-ink/70">
-          Registration closes April 18, 2026 — or when i fall asleep.
         </p>
       </div>
 
@@ -37,7 +36,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-4">
             <a
-              href="https://www.instagram.com/winontario/"
+              href="https://www.instagram.com/torchministry/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-paper/60 hover:text-paper transition-colors"
@@ -46,7 +45,7 @@ const Footer = () => {
                 <Instagram size={26} strokeWidth={2.5} />
             </a>
             <a
-              href="https://www.facebook.com/winontario/"
+              href="https://www.facebook.com/wintorchministry/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-paper/60 hover:text-paper transition-colors"

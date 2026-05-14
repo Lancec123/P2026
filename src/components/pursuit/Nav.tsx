@@ -149,8 +149,9 @@ const Nav = () => {
         </nav>
 
         <a
-          href="#register"
-          onClick={(e) => handleNav(e, "register")}
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdSF6MZLWDCLvZZCi4d5QT0RmfyyWG_hRHICWqi03kftWSwBQ/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-block px-5 py-2 bg-ink text-paper text-xs uppercase tracking-[0.2em] hover:bg-primary transition-colors"
         >
           Register

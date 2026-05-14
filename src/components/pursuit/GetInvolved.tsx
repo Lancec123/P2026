@@ -4,7 +4,7 @@ const roles = [
   {
     title: "Volunteer",
     desc: "Have a heart to serve and a desire to help young people grow in their faith? Join our team of camp volunteers dedicated to make a difference in the lives of young people.",
-    commit: "Volunteer Fee: $30.00",
+    commit: "Volunteer Fee: $45.00",
   },
   {
     title: "Become a Torch Ambassador",
@@ -49,10 +49,18 @@ const GetInvolved = () => {
                 <h3 className="font-serif-display text-3xl text-ink mb-3">{r.title}</h3>
                 <p className="text-ink/70 leading-relaxed">{r.desc}</p>
                 <a
-                  href={r.title === "Become a Torch Ambassador" ? "#" : "#register"}
-                  onClick={(e) => {
-                    if (r.title === "Become a Torch Ambassador") e.preventDefault();
-                  }}
+                  href={
+                        r.title === "Become a Torch Ambassador"
+                          ? "#"
+                          : r.title === "Volunteer"
+                          ? "https://docs.google.com/forms/d/e/1FAIpQLSe1YxUJeyzJUVISmtVdigz-4RGDr6zGMT06zgyNY8wrldPKZQ/viewform"
+                          : "#register"
+                      }
+                      target={r.title === "Volunteer" ? "_blank" : undefined}
+                      rel={r.title === "Volunteer" ? "noopener noreferrer" : undefined}
+                      onClick={(e) => {
+                        if (r.title === "Become a Torch Ambassador") e.preventDefault();
+                      }}
                   className={`inline-flex items-center gap-2 mt-6 text-sm uppercase tracking-[0.2em] transition-colors ${
                     r.title === "Become a Torch Ambassador"
                       ? "text-ink/30 hover:text-ink/30"
@@ -60,7 +68,7 @@ const GetInvolved = () => {
                   }`}
                 >
                   {r.title === "Pray"
-                    ? "Submit Prayer Request"
+                    ? "Coming Soon!"
                     : r.title === "Become a Torch Ambassador"
                     ? "Coming Soon!"
                     : "Apply"}

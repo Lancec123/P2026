@@ -120,15 +120,12 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-6 px-2 md:px-0">
-          <p className="max-w-xl mx-auto font-serif-display text-lg md:text-xl text-ink leading-relaxed">
-            More than just a youth camp — a place where young people can unplug, connect, and grow closer to Jesus. Through worship, outdoor adventures, late-night conversations, and authentic community, we create lasting friendships and deepen our faith together.
-          </p>
-        </div>
 
         <div className="flex flex-wrap gap-3 justify-center mt-6">
           <a
-            href="#register"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdSF6MZLWDCLvZZCi4d5QT0RmfyyWG_hRHICWqi03kftWSwBQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-7 py-3 bg-ink text-paper text-xs uppercase tracking-[0.25em] hover:bg-primary transition-colors"
           >
             Save your spot
