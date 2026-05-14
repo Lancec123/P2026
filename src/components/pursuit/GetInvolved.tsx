@@ -1,3 +1,4 @@
+import praiseImg from "@/assets/vol2.jpg";
 import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 
 const roles = [
@@ -36,6 +37,30 @@ const GetInvolved = () => {
           </StaggerItem>
         </StaggerReveal>
 
+        {/* Image strip */}
+        <StaggerReveal className="mb-16">
+          <StaggerItem>
+            <div className="relative w-full h-48 md:h-64 overflow-hidden shadow-paper rotate-[-0.5deg]">
+              <img
+                src={praiseImg}
+                alt="Pursuit camp worship"
+                className="w-full h-full object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-paper/60 via-transparent to-paper/60" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-paper/40" />
+              {/* Tape pieces */}
+              <div
+                className="absolute top-[-8px] left-16 w-14 h-4 bg-orange-200/80 rotate-[-2deg]"
+                style={{ clipPath: "polygon(2% 0%, 98% 2%, 97% 98%, 3% 100%)" }}
+              />
+              <div
+                className="absolute top-[-8px] right-20 w-10 h-4 bg-orange-200/60 rotate-[1deg]"
+                style={{ clipPath: "polygon(2% 0%, 98% 2%, 97% 98%, 3% 100%)" }}
+              />
+            </div>
+          </StaggerItem>
+        </StaggerReveal>
+
         <StaggerReveal className="grid md:grid-cols-2 gap-6">
           {roles.map((r, i) => (
             <StaggerItem key={r.title}>
@@ -48,19 +73,19 @@ const GetInvolved = () => {
                 </div>
                 <h3 className="font-serif-display text-3xl text-ink mb-3">{r.title}</h3>
                 <p className="text-ink/70 leading-relaxed">{r.desc}</p>
-                <a
+                <a  
                   href={
-                        r.title === "Become a Torch Ambassador"
-                          ? "#"
-                          : r.title === "Volunteer"
-                          ? "https://docs.google.com/forms/d/e/1FAIpQLSe1YxUJeyzJUVISmtVdigz-4RGDr6zGMT06zgyNY8wrldPKZQ/viewform"
-                          : "#register"
-                      }
-                      target={r.title === "Volunteer" ? "_blank" : undefined}
-                      rel={r.title === "Volunteer" ? "noopener noreferrer" : undefined}
-                      onClick={(e) => {
-                        if (r.title === "Become a Torch Ambassador") e.preventDefault();
-                      }}
+                    r.title === "Become a Torch Ambassador"
+                      ? "#"
+                      : r.title === "Volunteer"
+                      ? "https://docs.google.com/forms/d/e/1FAIpQLSe1YxUJeyzJUVISmtVdigz-4RGDr6zGMT06zgyNY8wrldPKZQ/viewform"
+                      : "#register"
+                  }
+                  target={r.title === "Volunteer" ? "_blank" : undefined}
+                  rel={r.title === "Volunteer" ? "noopener noreferrer" : undefined}
+                  onClick={(e) => {
+                    if (r.title === "Become a Torch Ambassador") e.preventDefault();
+                  }}
                   className={`inline-flex items-center gap-2 mt-6 text-sm uppercase tracking-[0.2em] transition-colors ${
                     r.title === "Become a Torch Ambassador"
                       ? "text-ink/30 hover:text-ink/30"

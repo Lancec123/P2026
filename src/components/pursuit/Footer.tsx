@@ -7,21 +7,35 @@ const Footer = () => {
       <div className="absolute inset-0">
         <img src={heroImg} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-paper/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-paper/20 via-transparent to-paper/90" />
+      </div>
+
+      {/* White glow behind text */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] md:w-[70vw] h-[70vh] md:h-[60vh]"
+          style={{
+            background: "radial-gradient(ellipse at center, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.12) 35%, transparent 60%)",
+          }}
+        />
       </div>
 
       <div className="relative container min-h-[80svh] flex flex-col justify-center items-center text-center py-24">
-        <p className="font-hand text-3xl text-highlight rotate-[-2deg] mb-4">come find us in the field —</p>
-        <h2 className="font-serif-display italic text-7xl md:text-[8rem] leading-[0.9] text-ink mb-8">
+        <p className="font-hand text-3xl text-highlight rotate-[-2deg] mb-4 drop-shadow-sm">
+          come find us in the field —
+        </p>
+        <h2 className="font-serif-display italic text-7xl md:text-[8rem] leading-[0.9] text-ink mb-8 drop-shadow-sm">
           Breaking Ground.
         </h2>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSdSF6MZLWDCLvZZCi4d5QT0RmfyyWG_hRHICWqi03kftWSwBQ/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block px-10 py-4 bg-ink text-paper text-xs uppercase tracking-[0.3em] hover:bg-primary transition-colors shadow-paper"
         >
-          Register for Pursuit ’26
+          Register for Pursuit &apos;26
         </a>
-        <p className="mt-6 text-sm text-ink/70">
-        </p>
+        <p className="mt-6 text-sm text-ink/70"></p>
       </div>
 
       <div className="relative bg-ink text-paper">
@@ -42,7 +56,7 @@ const Footer = () => {
               className="text-paper/60 hover:text-paper transition-colors"
               aria-label="Instagram"
             >
-                <Instagram size={26} strokeWidth={2.5} />
+              <Instagram size={26} strokeWidth={2.5} />
             </a>
             <a
               href="https://www.facebook.com/wintorchministry/"
