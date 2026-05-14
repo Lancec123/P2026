@@ -88,6 +88,25 @@ const FAQ = () => {
                 <img src={typoImg} alt="" className="w-full h-full object-cover" />
               </div>
             </div>
+            {/* Contact */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-t border-white/20 pt-6">
+              <div className="min-w-0">
+                <p className="text-sm text-white/80 mb-1">
+                  Still have questions?
+                </p>
+
+                <a
+                  href="mailto:torch@winontario.org"
+                  className="font-serif-display italic text-xl md:text-2xl text-white hover:text-white/80 transition-colors break-all"
+                >
+                  torch@winontario.org →
+                </a>
+              </div>
+
+              <div className="mb-8 flex items-center justify-end gap-4">
+            <p className="font-hand text-highlight text-2xl rotate-[-2deg]">we got you —</p>
+          </div>
+            </div>
           </StaggerItem>
         </StaggerReveal>
 
@@ -108,6 +127,7 @@ const FAQ = () => {
               </StaggerItem>
             ))}
           </div>
+          
         </StaggerReveal>
       </div>
 
