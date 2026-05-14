@@ -153,10 +153,10 @@ const Give = () => {
                           <>
                             For recipient, input:{" "}
                             <a
-                              href="mailto:give2torch@winontario.org"
+                              href="mailto:finance@winontario.org"
                               className="text-paper underline underline-offset-2 hover:text-highlight transition-colors"
                             >
-                              give2torch@winontario.org
+                              finance@winontario.org
                             </a>
                           </>
                         ) : i === 4 ? (
