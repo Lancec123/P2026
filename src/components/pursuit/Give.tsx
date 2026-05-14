@@ -6,8 +6,8 @@ const steps = [
   "Go to your bank app or site (e.g. EasyWeb for TD Bank)",
   "Select Interac e-Transfer then click Send Money",
   "Select the account you wish to send from, then enter the amount",
-  "For recipient, input: give2torch@winontario.org",
-  "In the note field, input: PC26",
+  "For recipient, input: finance@winontario.org",
+  "In the note field, input: PC26\n\nBe advised that any donations without fund code will be designated to WIMO's 'General Fund' donation.",
   "Send",
 ];
 
