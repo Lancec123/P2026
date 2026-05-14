@@ -1,6 +1,6 @@
-import kidsImg from "@/assets/kids-running.png";
-import flowerImg from "@/assets/flower-figure.png";
-import tornImg from "@/assets/torn-paper.png";
+import kidsImg from "@/assets/campfire.jpg";
+import flowerImg from "@/assets/praise2.jpg";
+import tornImg from "@/assets/outsidegravel.jpg";
 import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 import { useEffect, useRef, useState } from "react";
 

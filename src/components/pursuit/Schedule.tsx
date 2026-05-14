@@ -1,4 +1,4 @@
-import treeImg from "@/assets/tree-letter.png";
+import treeImg from "@/assets/praise.jpg";
 import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 
 const days = [

@@ -1,4 +1,4 @@
-import heroImg from "@/assets/hero-meadow.png";
+import heroImg from "@/assets/group.jpg";
 import { Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {

@@ -1,5 +1,5 @@
-import motionImg from "@/assets/constant-motion.png";
-import typoImg from "@/assets/typography-flower.png";
+import motionImg from "@/assets/group.jpg";
+import typoImg from "@/assets/outsidetable.jpg";
 import campBg from "@/assets/camp-background.jpg";
 import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 
