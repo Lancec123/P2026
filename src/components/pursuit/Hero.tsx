@@ -81,22 +81,18 @@ const Hero = () => {
       {/* Center content */}
         <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] pb-24 -mt-4 md:mt-0">
 
-          {/* dreamy cloud glow layer (FULL BACKGROUND FIELD) */}
+          {/* dreamy cloud glow layer (MOBILE SAFE) */}
             <div className="pointer-events-none absolute inset-0 -z-10">
+              
+              {/* soft base glow */}
+              <div className="absolute inset-0 bg-gradient-radial from-white/40 via-white/10 to-transparent" />
 
-              {/* fade mask */}
-              <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_25%,transparent_80%)] [webkit-mask-image:radial-gradient(ellipse_at_center,black_25%,transparent_80%)]">
+              {/* floating clouds */}
+              <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[70vw] h-[50vh] bg-white/50 rounded-full blur-[80px] opacity-70" />
 
-                {/* BIG BACKGROUND FIELD (not centered anymore) */}
-                <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[900px] h-[700px] bg-white/60 rounded-full blur-[140px] opacity-70" />
+              <div className="absolute top-[35%] left-[20%] w-[60vw] h-[40vh] bg-white/30 rounded-full blur-[70px] opacity-60" />
 
-                <div className="absolute top-[200px] left-1/3 w-[700px] h-[500px] bg-white/40 rounded-full blur-[120px] opacity-60" />
-
-                <div className="absolute top-[350px] left-2/3 w-[650px] h-[480px] bg-orange-100/20 rounded-full blur-[120px] opacity-40" />
-
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.35),transparent_70%)]" />
-
-              </div>
+              <div className="absolute top-[55%] left-[55%] w-[55vw] h-[35vh] bg-orange-100/20 rounded-full blur-[70px] opacity-40" />
             </div>
 
           {/* Top tagline */}
