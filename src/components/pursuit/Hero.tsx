@@ -18,25 +18,30 @@ const Hero = () => {
 
       {/* Top corner labels */}
       <div className="relative z-10 container pt-24 flex justify-between text-xs uppercase tracking-[0.25em] text-ink/70">
-
-        {/* LEFT SIDE (NOW BUTTON) */}
         <button
-          onClick={() => setGameOpen(true)}
-          className="uppercase tracking-[0.25em] text-highlight hover:text-paper transition-all cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-ink/80 shadow-soft rotate-[-1deg] hover:rotate-0 text-[8px] md:text-xs whitespace-nowrap font-bold"
-        >
-          ✦ Verse Guess
-        </button>
-
-        {/* RIGHT SIDE (unchanged) */}
+            onClick={() => setGameOpen(true)}
+            className="relative uppercase tracking-[0.25em] text-highlight hover:text-paper transition-all cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-ink/80 shadow-soft rotate-[-1deg] hover:rotate-0 text-[8px] md:text-xs whitespace-nowrap font-bold"
+            style={{ clipPath: "polygon(2% 8%, 98% 0%, 100% 92%, 96% 100%, 4% 96%, 0% 12%)" }}
+          >
+            <span
+              className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-3 md:w-8 md:h-4 bg-orange-200/80 backdrop-blur-sm rotate-[-1deg] shadow-sm"
+              style={{ clipPath: "polygon(2% 0%, 98% 2%, 97% 98%, 3% 100%)" }}
+            />
+            ✦ Verse Guess
+          </button>
         <div className="flex flex-col items-end gap-3">
           <button
             onClick={() => setVerseOpen(true)}
             className="relative uppercase tracking-[0.25em] text-ink/80 hover:text-ink transition-all cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-paper/90 shadow-soft rotate-[1.5deg] hover:rotate-0 text-[8px] md:text-xs whitespace-nowrap"
           >
+            <span
+              className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-3 md:w-8 md:h-4 bg-orange-200/80 backdrop-blur-sm rotate-[-1deg] shadow-sm"
+              style={{ clipPath: "polygon(2% 0%, 98% 2%, 97% 98%, 3% 100%)" }}
+            />
             Colossians 2:6-7
           </button>
+          
         </div>
-
       </div>
 
       {/* Verse Modal */}
