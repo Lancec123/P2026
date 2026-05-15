@@ -1,4 +1,4 @@
-import kidsImg from "@/assets/campfire.jpg";
+import kidsImg from "@/assets/outsiderun.jpg";
 import flowerImg from "@/assets/praise2.jpg";
 import tornImg from "@/assets/outsidegravel.jpg";
 import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
