@@ -89,20 +89,25 @@
     font-feature-settings: 'ss01', 'ss02';
   }
 
-  h1, h2, h3, h4 {
-    font-family: 'Fraunces', serif;
+    h1, h2, h3, h4 {
+    font-family: 'Redaction', serif;
     font-weight: 400;
     letter-spacing: -0.02em;
   }
 }
 
 @layer utilities {
-  .font-serif-display {
-    font-family: 'Fraunces', serif;
+    .font-serif-display {
+    font-family: 'Redaction35', serif;
+    font-style: italic;
   }
   .font-hand {
     font-family: 'Caveat', cursive;
   }
+  .font-serif-italic {
+  font-family: 'Redaction', serif;
+  font-style: italic;
+}
   .text-grain {
     background-image:
       radial-gradient(hsl(var(--ink) / 0.04) 1px, transparent 1px);

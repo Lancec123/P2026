@@ -26,12 +26,12 @@ const GetInvolved = () => {
         <StaggerReveal className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
           <StaggerItem>
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">05 — Get Involved</p>
-            <h2 className="font-serif-display text-5xl md:text-7xl leading-[1] max-w-2xl text-ink">
+            <h2 className="font-serif-italic text-5xl md:text-7xl leading-[1] max-w-2xl text-ink">
               Volunteers make <span className="italic">Pursuit</span> happen.
             </h2>
           </StaggerItem>
           <StaggerItem>
-            <p className="font-hand text-3xl text-highlight rotate-[-2deg] md:max-w-xs">
+            <p className="font-serif-italic text-3xl rotate-[-2deg] md:max-w-xs whitespace-nowrap" style={{ color: "#FF6633" }}>
               we couldn't do this without you :)
             </p>
           </StaggerItem>
@@ -66,12 +66,12 @@ const GetInvolved = () => {
             <StaggerItem key={r.title}>
               <div className="group relative p-8 border border-ink/15 hover:border-ink/40 transition-colors h-full">
                 <div className="flex items-start justify-between mb-6">
-                  <span className="font-serif-display italic text-ink/30 text-2xl">0{i + 1}</span>
+                  <span className="font-serif italic text-ink/30 text-2xl">0{i + 1}</span>
                   <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground border border-ink/20 px-3 py-1">
                     {r.commit}
                   </span>
                 </div>
-                <h3 className="font-serif-display text-3xl text-ink mb-3">{r.title}</h3>
+                <h3 className="font-serif text-3xl text-ink mb-3">{r.title}</h3>
                 <p className="text-ink/70 leading-relaxed">{r.desc}</p>
                 <a  
                   href={

@@ -21,26 +21,27 @@ const Footer = () => {
       </div>
 
       <div className="relative container min-h-[80svh] flex flex-col justify-center items-center text-center py-24">
-        <p className="font-hand text-3xl text-highlight rotate-[-2deg] mb-4 drop-shadow-sm">
-          come find us in the field —
-        </p>
-        <h2 className="font-serif-display italic text-7xl md:text-[8rem] leading-[0.9] text-ink mb-8 drop-shadow-sm">
-          Breaking Ground.
+        <p className="font-serif-italic text-3xl rotate-[-2deg] mb-4 drop-shadow-sm" style={{ color: "#FF6633" }}>
+          come find us in the field 
+        </p>  
+        <h2 className="font-serif-italic text-7xl md:text-[8rem] leading-[0.9] mb-8 drop-shadow-sm" style={{ color: "#25362C" }}>
+          Breaking Ground
         </h2>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSdSF6MZLWDCLvZZCi4d5QT0RmfyyWG_hRHICWqi03kftWSwBQ/viewform"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-10 py-4 bg-ink text-paper text-xs uppercase tracking-[0.3em] hover:bg-primary transition-colors shadow-paper"
+          className="inline-block px-10 py-4 text-paper text-xs uppercase tracking-[0.3em] hover:opacity-90 transition-colors shadow-paper"
+          style={{ backgroundColor: "#25362C" }}
         >
           Register for Pursuit &apos;26
         </a>
         <p className="mt-6 text-sm text-ink/70"></p>
       </div>
 
-      <div className="relative bg-ink text-paper">
+      <div className="relative text-paper" style={{ backgroundColor: "#25362C" }}>
         <div className="container py-10 flex flex-col md:flex-row gap-6 justify-between items-start md:items-center text-sm">
-          <div className="font-serif-display italic text-2xl">Pursuit</div>
+          <div className="font-serif italic text-2xl">Pursuit</div>
           <div className="flex flex-wrap gap-6 text-paper/60 text-xs uppercase tracking-[0.2em]">
             <a href="#about" className="hover:text-paper">About</a>
             <a href="#give" className="hover:text-paper">Give</a>

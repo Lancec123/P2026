@@ -75,7 +75,7 @@ const FAQ = () => {
         <StaggerReveal className="lg:col-span-4 space-y-8">
           <StaggerItem>
             <p className="text-xs uppercase tracking-[0.3em] text-paper/50 mb-4">04 — FAQ</p>
-            <h2 className="font-serif-display text-5xl md:text-6xl leading-[1] text-paper">
+            <h2 className="font-serif-italic text-5xl md:text-6xl leading-[1] text-paper">
               Questions <br /><span className="italic">we get a lot.</span>
             </h2>
           </StaggerItem>
@@ -97,14 +97,14 @@ const FAQ = () => {
 
                 <a
                   href="mailto:torch@winontario.org"
-                  className="font-serif-display italic text-xl md:text-2xl text-white hover:text-white/80 transition-colors break-all"
+                  className="font-serif italic text-xl md:text-2xl text-white hover:text-white/80 transition-colors break-all"
                 >
                   torch@winontario.org →
                 </a>
               </div>
 
               <div className="mb-8 flex items-center justify-end gap-4">
-            <p className="font-hand text-highlight text-2xl rotate-[-2deg]">we got you —</p>
+            <p className="font-serif-italic text-2xl rotate-[-2deg]" style={{ color: "#FF6633" }}>we got you</p>
           </div>
             </div>
           </StaggerItem>
@@ -112,15 +112,15 @@ const FAQ = () => {
 
         <StaggerReveal className="lg:col-span-7 lg:col-start-6">
           <div className="mb-8 flex items-center justify-end gap-4">
-            <p className="font-hand text-highlight text-2xl rotate-[-2deg]">things you probably wondered —</p>
+            <p className="font-serif-italic text-2xl rotate-[-2deg]" style={{ color: "#FF6633" }}>things you probably wondered </p>
           </div>
           <div className="space-y-px border-t border-paper/20">
             {faqs.map((f, i) => (
               <StaggerItem key={i}>
                 <details className="group border-b border-paper/20 py-6">
                   <summary className="flex items-center justify-between gap-4 cursor-pointer list-none">
-                    <h3 className="font-serif-display text-xl md:text-2xl text-paper pr-4">{f.q}</h3>
-                    <span className="font-serif-display text-2xl text-paper/40 group-open:rotate-45 transition-transform shrink-0">+</span>
+                    <h3 className="font-serif text-xl md:text-2xl text-paper pr-4">{f.q}</h3>
+                    <span className="font-serif text-2xl text-paper/40 group-open:rotate-45 transition-transform shrink-0">+</span>
                   </summary>
                   <p className="mt-4 text-paper/70 leading-relaxed max-w-2xl">{f.a}</p>
                 </details>

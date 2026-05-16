@@ -28,7 +28,7 @@ const Give = () => {
             <p className="text-xs uppercase tracking-[0.3em] text-paper/60 mb-4">
               02 — Give
             </p>
-            <h2 className="font-serif-display text-5xl md:text-7xl leading-[1] text-paper">
+            <h2 className="font-serif text-5xl md:text-7xl leading-[1] text-paper">
               Help make <br />
               <span className="italic">Pursuit happen.</span>
             </h2>
@@ -38,11 +38,11 @@ const Give = () => {
           <StaggerItem className="lg:col-span-5 lg:col-start-8 flex flex-col justify-end">
             <div className="w-full">
               <div className="flex flex-col items-center text-center">
-                <p className="font-hand text-2xl text-highlight rotate-[-1deg] mb-3">
+                <p className="font-serif-italic text-2xl rotate-[-1deg] mb-3" style={{ color: "#FF6633" }}>
                   camp goal
                 </p>
 
-                <p className="font-serif-display text-4xl md:text-5xl text-paper mb-6">
+                <p className="font-serif text-4xl md:text-5xl text-paper mb-6">
                   $0 <span className="text-paper/30">/</span> $10,000
                 </p>
 
@@ -130,10 +130,10 @@ const Give = () => {
             <StaggerItem>
               <div className="border border-paper/20 p-8 md:p-10 h-full space-y-8 bg-paper/5 backdrop-blur-sm">
                 <div>
-                  <p className="font-hand text-highlight text-2xl rotate-[-1deg] mb-3">
+                  <p className="font-serif-italic text-2xl rotate-[-1deg] mb-3" style={{ color: "#FF6633" }}>
                     option one
                   </p>
-                  <h3 className="font-serif-display text-3xl md:text-4xl text-paper">
+                  <h3 className="font-serif text-3xl md:text-4xl text-paper">
                     Interac e-Transfer
                   </h3>
                 </div>
@@ -186,10 +186,10 @@ const Give = () => {
             <StaggerItem>
               <div className="border border-paper/20 p-8 md:p-10 h-full flex flex-col justify-between space-y-8 bg-paper/5 backdrop-blur-sm">
                 <div>
-                  <p className="font-hand text-highlight text-2xl rotate-[-1deg] mb-3">
+                  <p className="font-serif-italic text-2xl rotate-[-1deg] mb-3" style={{ color: "#FF6633" }}>
                     option two
                   </p>
-                  <h3 className="font-serif-display text-3xl md:text-4xl text-paper">
+                  <h3 className="font-serif text-3xl md:text-4xl text-paper">
                     Give Online
                   </h3>
                   <p className="text-paper/70 leading-relaxed mt-4">

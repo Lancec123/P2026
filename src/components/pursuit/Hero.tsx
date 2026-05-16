@@ -95,27 +95,27 @@ const Hero = () => {
       {/* Center content */}
       <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] pb-24 mt-8 md:mt-0">
 
-        <p className="font-hand text-2xl md:text-3xl text-highlight rotate-[-2deg] drop-shadow-sm">
-          Breaking Ground —
+        <p className="font-serif-display italic text-2xl md:text-3xl rotate-[-2deg] drop-shadow-sm" style={{ color: "#25362C" }}>
+          Breaking Ground
         </p>
 
         <div className="relative inline-block mt-2">
-          <h1 className="relative font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] text-ink drop-shadow-sm">
+          <h1 className="relative font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] drop-shadow-sm" style={{ color: "#25362C" }}>
             Pursuit
           </h1>
         </div>
 
-        <div className="flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] text-ink mt-4">
+        <div className="flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] mt-4" style={{ color: "#25362C" }}>
           <div className="flex items-center gap-2 md:gap-4">
             <span className="h-px w-6 md:w-10 bg-ink/40" />
-            <span className="font-bold text-center leading-relaxed">
+            <span className="font-serif  text-center leading-relaxed">
               Pearce Williams — 8009 Iona Rd, Fingal, ON
             </span>
             <span className="h-px w-6 md:w-10 bg-ink/40" />
           </div>
           <div className="flex items-center gap-2 md:gap-4">
             <span className="h-px w-6 md:w-10 bg-ink/40" />
-            <span className="font-bold">September 4 – 7, 2026</span>
+            <span className="font-serif">September 4 – 7, 2026</span>
             <span className="h-px w-6 md:w-10 bg-ink/40" />
           </div>
         </div>
@@ -124,12 +124,13 @@ const Hero = () => {
         <div className="flex flex-wrap gap-3 justify-center mt-6">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdSF6MZLWDCLvZZCi4d5QT0RmfyyWG_hRHICWqi03kftWSwBQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-7 py-3 bg-ink text-paper text-xs uppercase tracking-[0.25em] hover:bg-primary transition-colors"
-          >
-            Save your spot
-          </a>
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-7 py-3 text-paper text-xs uppercase tracking-[0.25em] hover:opacity-90 transition-colors"
+          style={{ backgroundColor: "#25362C" }}
+        >
+          Save your spot
+        </a>
           <a
             href="#about"
             className="px-7 py-3 border border-ink/30 text-ink text-xs uppercase tracking-[0.25em] hover:bg-ink/5 transition-colors"

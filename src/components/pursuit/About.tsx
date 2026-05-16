@@ -48,7 +48,7 @@ const StatItem = ({ n, l, suffix = "" }: { n: number; l: string; suffix?: string
 
   return (
     <div ref={ref}>
-      <div className="font-serif-display text-4xl text-ink">
+      <div className="font-serif text-4xl text-ink">
         {count}{suffix}
       </div>
       <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">{l}</div>
@@ -66,7 +66,7 @@ const About = () => {
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">01 — About</p>
           </StaggerItem>
           <StaggerItem>
-            <div className="font-hand text-highlight text-3xl rotate-[-3deg]">
+            <div className="font-serif-display italic text-highlight text-3xl rotate-[-3deg]">
               why we go
             </div>
           </StaggerItem>
@@ -75,7 +75,7 @@ const About = () => {
         {/* Middle: copy */}
         <StaggerReveal className="lg:col-span-5 space-y-8">
           <StaggerItem>
-            <h2 className="font-serif-display text-5xl md:text-6xl leading-[1.05] text-ink">
+            <h2 className="font-serif-italic text-5xl md:text-6xl leading-[1.05] text-ink">
               Experience Jesus' love in a whole new way
             </h2>
           </StaggerItem>
@@ -140,10 +140,12 @@ const About = () => {
                 {/* Label */}
                 <div className="lg:col-span-3">
                   <p className="text-sm uppercase tracking-[0.3em] text-ink font-bold mb-4">Registration</p>
-                  <div className="font-hand text-highlight text-5xl rotate-[-2deg] mb-6">camp fees</div>
-                  <div className="bg-grass-deep text-paper p-6 shadow-paper rotate-[-1deg] max-w-[200px]">
+                  <div className="font-serif-italic text-4xl rotate-[-6deg] mb-6" style={{ color: "#FF6633" }}>
+                    camp fees
+                  </div>
+                  <div className="text-paper p-6 shadow-paper rotate-[-1deg] max-w-[200px]" style={{ backgroundColor: "#25362C" }}>
                     <p className="text-xs uppercase tracking-[0.2em] text-paper/50 mb-2">Cost per person</p>
-                    <p className="font-serif-display italic text-6xl text-paper">$90</p>
+                    <p className="font-serif italic text-6xl text-paper">$90</p>
                     <p className="text-xs text-paper/50 mt-2 uppercase tracking-[0.15em]">All-inclusive</p>
                   </div>
                 </div>
@@ -170,7 +172,7 @@ const About = () => {
                       },
                       {
                         label: "Amount",
-                        content: <span className="font-serif-display text-ink text-2xl">$90</span>,
+                        content: <span className="font-serif text-ink text-2xl">$90</span>,
                       },
                       {
                         label: "Message",
@@ -216,7 +218,7 @@ const About = () => {
                       <p className="text-sm text-muted-foreground mb-1">Questions or issues with payment?</p>
                       <a
                         href="mailto:marjay.rigor@winontario.org"
-                        className="font-serif-display italic text-xl md:text-2xl text-ink hover:text-highlight transition-colors break-all"
+                        className="font-serif italic text-xl md:text-2xl text-ink hover:text-highlight transition-colors break-all"
                       >
                         marjay.rigor@winontario.org →
                       </a>

@@ -152,7 +152,8 @@ const Nav = () => {
           href="https://docs.google.com/forms/d/e/1FAIpQLSdSF6MZLWDCLvZZCi4d5QT0RmfyyWG_hRHICWqi03kftWSwBQ/viewform"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-block px-5 py-2 bg-ink text-paper text-xs uppercase tracking-[0.2em] hover:bg-primary transition-colors"
+          className="hidden md:inline-block px-5 py-2 text-paper text-xs uppercase tracking-[0.2em] hover:opacity-90 transition-colors"
+style={{ backgroundColor: "#25362C" }}
         >
           Register
         </a>
@@ -198,7 +199,8 @@ const Nav = () => {
             <a
               href="#register"
               onClick={(e) => handleNav(e, "register")}
-              className="mt-2 px-5 py-3 bg-ink text-paper text-center text-xs uppercase tracking-[0.2em]"
+              className="mt-2 px-5 py-3 text-paper text-center text-xs uppercase tracking-[0.2em]"
+style={{ backgroundColor: "#25362C" }}
             >
               Register
             </a>
