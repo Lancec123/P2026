@@ -66,9 +66,9 @@ const About = () => {
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">01 — About</p>
           </StaggerItem>
           <StaggerItem>
-            <div className="font-serif-display italic text-highlight text-3xl rotate-[-3deg]">
-              why we go
-            </div>
+            <div className="font-serif-italic text-3xl rotate-[-3deg]" style={{ color: "#FF6633" }}>
+            why we go
+          </div>
           </StaggerItem>
         </StaggerReveal>
 
