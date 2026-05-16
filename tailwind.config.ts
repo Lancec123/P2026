@@ -12,9 +12,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['Fraunces', 'serif'],
-        sans: ['Inter', 'sans-serif'],
-        hand: ['Caveat', 'cursive'],
+        'serif': ['Redaction', 'serif'],
+        'serif-display': ['Redaction35', 'serif'],
+        'sans': ['Inter', 'sans-serif'],
+        'hand': ['Caveat', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -88,5 +89,6 @@ export default {
       },
     },
   },
+  // @ts-ignore
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
