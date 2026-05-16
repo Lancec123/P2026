@@ -100,8 +100,8 @@ const Nav = () => {
           className="-rotate-2 group-hover:rotate-0 transition-transform"
           style={{ height: "50px", width: "110px" }}
         />
-        <span className="hidden sm:inline text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          Young People’s Retreat '26
+        <span className="hidden sm:inline text-xs uppercase tracking-[0.2em]" style={{ color: "#25362C" }}>
+          Young People's Retreat '26
         </span>
       </a>
 
@@ -131,8 +131,9 @@ const Nav = () => {
                 href={`#${id}`}
                 onClick={(e) => handleNav(e, id)}
                 className={`px-4 py-2 text-sm uppercase tracking-wider transition-colors relative group ${
-                  isActive ? "text-ink" : "text-foreground/70 hover:text-foreground"
-                }`}
+  isActive ? "" : "hover:opacity-70"
+}`}
+style={{ color: "#25362C" }}
               >
                 {tab}
 
@@ -152,8 +153,8 @@ const Nav = () => {
           href="https://docs.google.com/forms/d/e/1FAIpQLSdSF6MZLWDCLvZZCi4d5QT0RmfyyWG_hRHICWqi03kftWSwBQ/viewform"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-block px-5 py-2 text-paper text-xs uppercase tracking-[0.2em] hover:opacity-90 transition-colors"
-style={{ backgroundColor: "#25362C" }}
+          className="hidden md:inline-block px-5 py-2 text-xs uppercase tracking-[0.2em] hover:opacity-90 transition-colors"
+          style={{ backgroundColor: "white", color: "#25362C" }}
         >
           Register
         </a>
@@ -197,13 +198,13 @@ style={{ backgroundColor: "#25362C" }}
               );
             })}
             <a
-              href="#register"
-              onClick={(e) => handleNav(e, "register")}
-              className="mt-2 px-5 py-3 text-paper text-center text-xs uppercase tracking-[0.2em]"
-style={{ backgroundColor: "#25362C" }}
-            >
-              Register
-            </a>
+             href="#register"
+  onClick={(e) => handleNav(e, "register")}
+  className="mt-2 px-5 py-3 text-center text-xs uppercase tracking-[0.2em]"
+  style={{ backgroundColor: "white", color: "#25362C" }}
+>
+  Register
+</a>
           </div>
         </div>
       )}
