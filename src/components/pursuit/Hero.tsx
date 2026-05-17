@@ -7,10 +7,10 @@ const Hero = () => {
   const [gameOpen, setGameOpen] = useState(false);
 
   return (
-    <section id="top" className="relative min-h-[100svh] w-full overflow-hidden">
+    <section id="top" className="relative min-h-[100svh] md:min-h-[100svh] w-full overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Pursuit camp" className="w-full h-full object-cover object-[70%_center] md:object-center" />
+        <img src={heroImg} alt="Pursuit camp" className="w-full h-full object-cover object-center md:object-center" />
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-paper/60 to-transparent" />
       </div>
 
