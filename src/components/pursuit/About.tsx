@@ -66,9 +66,9 @@ const About = () => {
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">01 — About</p>
           </StaggerItem>
           <StaggerItem>
-            <div className="font-serif-italic text-3xl rotate-[-3deg]" style={{ color: "#FF6633" }}>
-            why we go
-          </div>
+            <div className="font-hand text-3xl rotate-[-3deg]" style={{ color: "#FF6633" }}>
+              why we go —
+            </div>
           </StaggerItem>
         </StaggerReveal>
 
@@ -140,7 +140,7 @@ const About = () => {
                 {/* Label */}
                 <div className="lg:col-span-3">
                   <p className="text-sm uppercase tracking-[0.3em] text-ink font-bold mb-4">Registration</p>
-                  <div className="font-serif-italic text-4xl rotate-[-6deg] mb-6" style={{ color: "#FF6633" }}>
+                  <div className="font-hand text-4xl rotate-[-6deg] mb-6" style={{ color: "#FF6633" }}>
                     camp fees
                   </div>
                   <div className="text-paper p-6 shadow-paper rotate-[-1deg] max-w-[200px]" style={{ backgroundColor: "#25362C" }}>
@@ -224,7 +224,7 @@ const About = () => {
                       </a>
                     </div>
                     <div className="shrink-0">
-                      <span className="font-hand text-highlight text-xl rotate-[1deg] inline-block">we got you —</span>
+                      <span className="font-hand text-highlight text-3xl rotate-[1deg] inline-block" style={{ color: "#FF6633" }}>we got you —</span>
                     </div>
                   </div>
                 </div>

@@ -31,7 +31,7 @@ const GetInvolved = () => {
             </h2>
           </StaggerItem>
           <StaggerItem>
-            <p className="font-serif-italic text-3xl rotate-[-2deg] md:max-w-xs whitespace-nowrap" style={{ color: "#FF6633" }}>
+            <p className="font-hand text-3xl rotate-[-2deg] md:max-w-xs" style={{ color: "#FF6633" }}>
               we couldn't do this without you :)
             </p>
           </StaggerItem>
@@ -78,7 +78,7 @@ const GetInvolved = () => {
                     r.title === "Become a Torch Ambassador"
                       ? "#"
                       : r.title === "Volunteer"
-                      ? "https://docs.google.com/forms/d/e/1FAIpQLSe1YxUJeyzJUVISmtVdigz-4RGDr6zGMT06zgyNY8wrldPKZQ/viewform"
+                      ? "https://subsplash.com/u/-D56TVS/forms/d/c3669198-23ec-4e6e-88f4-e0e8ddd54409"
                       : "#register"
                   }
                   target={r.title === "Volunteer" ? "_blank" : undefined}

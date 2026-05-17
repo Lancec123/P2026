@@ -1,4 +1,4 @@
-import pathImg from "@/assets/right-path.png";
+import pathImg from "@/assets/HieuLayingEdit.png";
 import { StaggerReveal, StaggerItem } from "@/components/StaggerReveal";
 import { motion } from "framer-motion";
 
@@ -38,7 +38,7 @@ const Give = () => {
           <StaggerItem className="lg:col-span-5 lg:col-start-8 flex flex-col justify-end">
             <div className="w-full">
               <div className="flex flex-col items-center text-center">
-                <p className="font-serif-italic text-2xl rotate-[-1deg] mb-3" style={{ color: "#FF6633" }}>
+                <p className="font-hand text-4xl rotate-[-1deg] mb-3" style={{ color: "#FF6633" }}>
                   camp goal
                 </p>
 
@@ -130,7 +130,7 @@ const Give = () => {
             <StaggerItem>
               <div className="border border-paper/20 p-8 md:p-10 h-full space-y-8 bg-paper/5 backdrop-blur-sm">
                 <div>
-                  <p className="font-serif-italic text-2xl rotate-[-1deg] mb-3" style={{ color: "#FF6633" }}>
+                  <p className="font-hand text-3xl rotate-[-1deg] mb-3" style={{ color: "#FF6633" }}>
                     option one
                   </p>
                   <h3 className="font-serif text-3xl md:text-4xl text-paper">
@@ -186,7 +186,7 @@ const Give = () => {
             <StaggerItem>
               <div className="border border-paper/20 p-8 md:p-10 h-full flex flex-col justify-between space-y-8 bg-paper/5 backdrop-blur-sm">
                 <div>
-                  <p className="font-serif-italic text-2xl rotate-[-1deg] mb-3" style={{ color: "#FF6633" }}>
+                  <p className="font-hand text-3xl rotate-[-1deg] mb-3" style={{ color: "#FF6633" }}>
                     option two
                   </p>
                   <h3 className="font-serif text-3xl md:text-4xl text-paper">
@@ -199,7 +199,7 @@ const Give = () => {
 
                 <div className="space-y-4">
                   <a
-                    href="https://subsplash.com/u/-D56TVS/give?frequency=once&next_process_date=05/13/2026&campus_id=943911e5-9ccd-4da4-9933-9894411c7bcc&fund_id=c59f474c-feba-44a4-aeef-739dcc6c1172"
+                    href="https://subsplash.com/u/-D56TVS/give?frequency=once&next_process_date=05/13/2026&campus_id=943911e5-9ccd-4da4-9933-9894411c7bcc&fund_id=decf2d0a-2ec6-4e5f-bf08-dfd3d19e04ba&fbclid=PARlRTSAR2DzRleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadLB570MD6O_7N1HTH9VK6zF3UB9eh4jm1XYdiXytNzNAgVlKOdHU-gOTbZtg_aem_eVaU8in5uHjoM-RH7PPJnQ"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full text-center px-8 py-4 bg-paper text-ink text-xs uppercase tracking-[0.3em] hover:bg-highlight hover:text-paper transition-colors"
@@ -210,6 +210,23 @@ const Give = () => {
                   <p className="text-xs text-paper/40 text-center uppercase tracking-[0.15em]">
                     Secure online giving
                   </p>
+                  {/* Instructions */}
+                    <div className="border border-paper/20 divide-y divide-paper/20 mt-2">
+                      <div className="flex items-center gap-4 px-4 py-3">
+                        <span className="text-paper/40 text-xs uppercase tracking-[0.15em] shrink-0 w-16">Step 1</span>
+                        <div>
+                          <p className="text-paper/40 text-[10px] uppercase tracking-[0.15em] mb-0.5">Campus</p>
+                          <p className="text-paper/80 text-sm">WIMO Torch <span className="text-paper/40 text-xs">(Youth & Young Adults)</span></p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-4 px-4 py-3">
+                        <span className="text-paper/40 text-xs uppercase tracking-[0.15em] shrink-0 w-16">Step 2</span>
+                        <div>
+                          <p className="text-paper/40 text-[10px] uppercase tracking-[0.15em] mb-0.5">Fund</p>
+                          <p className="text-paper/80 text-sm">Pursuit Camp 2026</p>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
             </StaggerItem>

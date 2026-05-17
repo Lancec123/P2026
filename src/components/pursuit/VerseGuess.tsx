@@ -41,7 +41,7 @@ const rounds = [
 const shuffle = (arr: string[]) => [...arr].sort(() => Math.random() - 0.5);
 
 const scoreMessages = [
-  { min: 0, max: 1, msg: "That's okay — we will lean this all at the retreat! 🙌" },
+  { min: 0, max: 1, msg: "That's okay — we will learn this all at the retreat! 🙌" },
   { min: 2, max: 3, msg: "Not bad! You know your way around the Word 📖" },
   { min: 4, max: 4, msg: "Really solid! Almost got them all 🙌" },
   { min: 5, max: 5, msg: "Perfect score! You might be the next group leader 👑" },
@@ -101,7 +101,10 @@ export const VerseGuess = ({ onClose }: { onClose: () => void }) => {
                 <span className="text-xs uppercase tracking-[0.2em] text-ink/50">
                   {current + 1} / {shuffledRounds.length}
                 </span>
-                <span className="text-xs uppercase tracking-[0.2em] bg-ink text-paper px-2 py-1">
+                <span
+                  className="text-xs uppercase tracking-[0.2em] text-paper px-2 py-1"
+                  style={{ backgroundColor: "#25362C" }}
+                >
                   Score: {score}
                 </span>
               </div>
@@ -109,14 +112,19 @@ export const VerseGuess = ({ onClose }: { onClose: () => void }) => {
 
             <div className="w-full h-px bg-ink/10 mb-6">
               <div
-                className="h-px bg-ink transition-all duration-500"
-                style={{ width: `${((current + 1) / shuffledRounds.length) * 100}%` }}
+                className="h-px transition-all duration-500"
+                style={{
+                  width: `${((current + 1) / shuffledRounds.length) * 100}%`,
+                  backgroundColor: "#25362C",
+                }}
               />
             </div>
 
-            <p className="font-hand text-highlight text-xl mb-4">{round.reference}</p>
+            <p className="font-serif-italic text-xl mb-4" style={{ color: "#FF6633" }}>
+              {round.reference}
+            </p>
 
-            <p className="font-serif-display italic text-xl md:text-2xl text-ink leading-relaxed mb-8">
+            <p className="font-serif-italic text-xl md:text-2xl text-ink leading-relaxed mb-8">
               &ldquo;{round.before}{" "}
               <span
                 className={`inline-block min-w-[80px] border-b-2 text-center px-2 transition-colors ${
@@ -161,7 +169,8 @@ export const VerseGuess = ({ onClose }: { onClose: () => void }) => {
                 </p>
                 <button
                   onClick={handleNext}
-                  className="px-5 py-2 bg-ink text-paper text-xs uppercase tracking-[0.2em] hover:bg-primary transition-colors"
+                  className="px-5 py-2 text-paper text-xs uppercase tracking-[0.2em] hover:opacity-90 transition-colors"
+                  style={{ backgroundColor: "#25362C" }}
                 >
                   {isLast ? "See results" : "Next →"}
                 </button>
@@ -172,21 +181,25 @@ export const VerseGuess = ({ onClose }: { onClose: () => void }) => {
           <>
             <p className="text-xs uppercase tracking-[0.3em] text-ink/50 mb-6">Verse Guess — Results</p>
             <div className="text-center space-y-4 py-6">
-              <p className="font-serif-display italic text-6xl text-ink">
+              <p className="font-serif-italic text-6xl text-ink">
                 {score} / {shuffledRounds.length}
               </p>
-              <p className="font-hand text-highlight text-2xl">{getScoreMessage(score)}</p>
+              <p className="font-hand text-2xl" style={{ color: "#FF6633" }}>
+                {getScoreMessage(score)}
+              </p>
             </div>
             <div className="flex gap-3 mt-8 border-t border-ink/10 pt-6">
               <button
                 onClick={handleRestart}
-                className="flex-1 px-5 py-3 border border-ink/20 text-ink text-xs uppercase tracking-[0.2em] hover:bg-ink/5 transition-colors"
+                className="flex-1 px-5 py-3 border text-ink text-xs uppercase tracking-[0.2em] hover:opacity-80 transition-colors"
+                style={{ borderColor: "#25362C", color: "#25362C" }}
               >
                 Play again
               </button>
               <button
                 onClick={onClose}
-                className="flex-1 px-5 py-3 bg-ink text-paper text-xs uppercase tracking-[0.2em] hover:bg-primary transition-colors"
+                className="flex-1 px-5 py-3 text-paper text-xs uppercase tracking-[0.2em] hover:opacity-90 transition-colors"
+                style={{ backgroundColor: "#25362C" }}
               >
                 Close
               </button>

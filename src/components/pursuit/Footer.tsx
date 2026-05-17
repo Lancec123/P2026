@@ -1,4 +1,4 @@
-import heroImg from "@/assets/group.jpg";
+import heroImg from "@/assets/PursuitRevealBanner.jpg";
 import { Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
@@ -6,29 +6,17 @@ const Footer = () => {
     <section id="register" className="relative min-h-[80svh] overflow-hidden">
       <div className="absolute inset-0">
         <img src={heroImg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-paper/30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-paper/20 via-transparent to-paper/90" />
-      </div>
-
-      {/* White glow behind text */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] md:w-[70vw] h-[70vh] md:h-[60vh]"
-          style={{
-            background: "radial-gradient(ellipse at center, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.12) 35%, transparent 60%)",
-          }}
-        />
       </div>
 
       <div className="relative container min-h-[80svh] flex flex-col justify-center items-center text-center py-24">
-        <p className="font-serif-italic text-3xl rotate-[-2deg] mb-4 drop-shadow-sm" style={{ color: "#FF6633" }}>
-          come find us in the field 
-        </p>  
+        <p className="font-hand text-3xl rotate-[-2deg] mb-4" style={{ color: "#FF6633" }}>
+          come find us in the field
+        </p>
         <h2 className="font-serif-italic text-7xl md:text-[8rem] leading-[0.9] mb-8 drop-shadow-sm" style={{ color: "#25362C" }}>
           Breaking Ground
         </h2>
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdSF6MZLWDCLvZZCi4d5QT0RmfyyWG_hRHICWqi03kftWSwBQ/viewform"
+          href="https://subsplash.com/u/-D56TVS/forms/d/fb75e7b5-c38f-4c94-83f8-a51b3d8d3f6b"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-10 py-4 text-paper text-xs uppercase tracking-[0.3em] hover:opacity-90 transition-colors shadow-paper"

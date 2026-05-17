@@ -1,4 +1,4 @@
-import heroImg from "@/assets/heroppl2.jpg";
+import heroImg from "@/assets/hero.jpg";
 import { useState } from "react";
 import { VerseGuess } from "@/components/pursuit/VerseGuess";
 
@@ -11,19 +11,7 @@ const Hero = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img src={heroImg} alt="Pursuit camp" className="w-full h-full object-cover object-[70%_center] md:object-center" />
-        <div className="absolute inset-0 bg-paper/5" />
-        <div className="absolute inset-0 bg-gradient-to-b from-paper/20 via-transparent to-paper/90" />
-        <div className="absolute inset-0 vignette" />
-      </div>
-
-      {/* White glow behind text */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] md:w-[70vw] h-[70vh] md:h-[60vh]"
-          style={{
-            background: "radial-gradient(ellipse at center, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.55) 35%, rgba(255,255,255,0.2) 60%, transparent 80%)",
-          }}
-        />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-paper/60 to-transparent" />
       </div>
 
       {/* Top corner labels */}
@@ -36,8 +24,8 @@ const Hero = () => {
           />
           <button
             onClick={() => setGameOpen(true)}
-            className="relative uppercase tracking-[0.25em] text-highlight hover:text-paper transition-all cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-ink/80 shadow-soft rotate-[-1deg] hover:rotate-0 text-[8px] md:text-xs whitespace-nowrap font-bold"
-            style={{ clipPath: "polygon(2% 8%, 98% 0%, 100% 92%, 96% 100%, 4% 96%, 0% 12%)" }}
+            className="relative uppercase tracking-[0.25em] hover:text-paper transition-all cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-ink/80 shadow-soft rotate-[-1deg] hover:rotate-0 text-[8px] md:text-xs whitespace-nowrap font-bold"
+style={{ color: "#FF6633", clipPath: "polygon(2% 8%, 98% 0%, 100% 92%, 96% 100%, 4% 96%, 0% 12%)" }}
           >
             ✦ Verse Guess
           </button>
@@ -73,7 +61,7 @@ const Hero = () => {
             <p className="text-xs uppercase tracking-[0.3em] text-ink/50 mb-6">
               Colossians 2:6-7
             </p>
-            <p className="font-serif-display italic text-2xl md:text-3xl text-ink leading-relaxed">
+            <p className="font-serif-italic text-2xl md:text-3xl text-ink leading-relaxed">
               "So then, just as you received Christ Jesus as Lord, continue to live your lives in him, rooted and built up in him, strengthened in the faith as you were taught, and overflowing with thankfulness."
             </p>
             <div className="mt-6 flex justify-between items-center">
@@ -92,15 +80,15 @@ const Hero = () => {
       {/* Verse Guess Game Modal */}
       {gameOpen && <VerseGuess onClose={() => setGameOpen(false)} />}
 
-      {/* Center content */}
-      <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] pb-24 mt-8 md:mt-0">
+      {/* Center content — shifted down */}
+      <div className="relative z-10 container flex flex-col items-center justify-center text-center min-h-[80svh] pb-24 mt-24 md:mt-16">
 
-        <p className="font-serif-display italic text-2xl md:text-3xl rotate-[-2deg] drop-shadow-sm" style={{ color: "#25362C" }}>
+        <p className="font-serif-italic italic text-2xl md:text-3xl rotate-[-2deg] drop-shadow-sm" style={{ color: "#FF6633" }}>
           Breaking Ground
         </p>
 
         <div className="relative inline-block mt-2">
-          <h1 className="relative font-serif-display italic text-7xl md:text-[10rem] leading-[0.9] drop-shadow-sm" style={{ color: "#25362C" }}>
+          <h1 className="relative font-serif-italic text-7xl md:text-[10rem] leading-[0.9] drop-shadow-sm" style={{ color: "#25362C" }}>
             Pursuit
           </h1>
         </div>
@@ -108,32 +96,32 @@ const Hero = () => {
         <div className="flex flex-col items-center gap-2 text-xs uppercase tracking-[0.3em] mt-4" style={{ color: "#25362C" }}>
           <div className="flex items-center gap-2 md:gap-4">
             <span className="h-px w-6 md:w-10 bg-ink/40" />
-            <span className="font-serif  text-center leading-relaxed">
+            <span className="text-center leading-relaxed">
               Pearce Williams — 8009 Iona Rd, Fingal, ON
             </span>
             <span className="h-px w-6 md:w-10 bg-ink/40" />
           </div>
           <div className="flex items-center gap-2 md:gap-4">
             <span className="h-px w-6 md:w-10 bg-ink/40" />
-            <span className="font-serif">September 4 – 7, 2026</span>
+            <span>September 4 – 7, 2026</span>
             <span className="h-px w-6 md:w-10 bg-ink/40" />
           </div>
         </div>
 
-
         <div className="flex flex-wrap gap-3 justify-center mt-6">
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdSF6MZLWDCLvZZCi4d5QT0RmfyyWG_hRHICWqi03kftWSwBQ/viewform"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-7 py-3 text-paper text-xs uppercase tracking-[0.25em] hover:opacity-90 transition-colors"
-          style={{ backgroundColor: "#25362C" }}
-        >
-          Save your spot
-        </a>
+            href="https://subsplash.com/u/-D56TVS/forms/d/fb75e7b5-c38f-4c94-83f8-a51b3d8d3f6b"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-7 py-3 text-paper text-xs uppercase tracking-[0.25em] hover:opacity-90 transition-colors"
+            style={{ backgroundColor: "#25362C" }}
+          >
+            Save your spot
+          </a>
           <a
             href="#about"
-            className="px-7 py-3 border border-ink/30 text-ink text-xs uppercase tracking-[0.25em] hover:bg-ink/5 transition-colors"
+            className="px-7 py-3 text-xs uppercase tracking-[0.25em] hover:opacity-80 transition-colors"
+            style={{ border: "1px solid #25362C", color: "#25362C" }}
           >
             Learn more
           </a>
@@ -148,7 +136,7 @@ const Hero = () => {
               {["Press in", "Run the race", "Be still", "Look up", "Together", "Pursue", "Press in", "Run the race", "Be still", "Look up", "Together", "Pursue"].map((w, j) => (
                 <span key={j} className="flex items-center gap-8">
                   {w}
-                  <span className="text-highlight">✦</span>
+                  <span style={{ color: "#FF6633" }}>✦</span>
                 </span>
               ))}
             </div>

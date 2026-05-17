@@ -104,7 +104,7 @@ const FAQ = () => {
               </div>
 
               <div className="mb-8 flex items-center justify-end gap-4">
-            <p className="font-serif-italic text-2xl rotate-[-2deg]" style={{ color: "#FF6633" }}>we got you</p>
+            <p className="font-hand text-3xl rotate-[-2deg]" style={{ color: "#FF6633" }}>we got you —</p>
           </div>
             </div>
           </StaggerItem>
@@ -112,7 +112,7 @@ const FAQ = () => {
 
         <StaggerReveal className="lg:col-span-7 lg:col-start-6">
           <div className="mb-8 flex items-center justify-end gap-4">
-            <p className="font-serif-italic text-2xl rotate-[-2deg]" style={{ color: "#FF6633" }}>things you probably wondered </p>
+            <p className="font-hand text-3xl rotate-[-2deg]" style={{ color: "#FF6633" }}>things you probably wondered </p>
           </div>
           <div className="space-y-px border-t border-paper/20">
             {faqs.map((f, i) => (
