@@ -1,4 +1,5 @@
 import heroImg from "@/assets/hero.jpg";
+import heroMobileImg from "@/assets/heromobile.jpg";
 import { useState } from "react";
 import { VerseGuess } from "@/components/pursuit/VerseGuess";
 
@@ -10,7 +11,10 @@ const Hero = () => {
     <section id="top" className="relative min-h-[100svh] md:min-h-[100svh] w-full overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Pursuit camp" className="w-full h-full object-cover object-center md:object-center" />
+        <picture>
+          <source media="(max-width: 768px)" srcSet={heroMobileImg} />
+          <img src={heroImg} alt="Pursuit camp" className="w-full h-full object-cover object-center" />
+        </picture>
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-paper/60 to-transparent" />
       </div>
 
