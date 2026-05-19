@@ -159,30 +159,43 @@ const About = () => {
                   {/* Steps */}
                   <div className="border border-ink/15 overflow-hidden">
                     {[
-                      {
-                        label: "Recipient",
-                        content: (
-                          <a
-                            href="mailto:pursuit@winontario.org"
-                            className="text-ink font-medium underline underline-offset-2 hover:text-highlight transition-colors break-all"
-                          >
-                            pursuit@winontario.org
-                          </a>
-                        ),
-                      },
-                      {
-                        label: "Amount",
-                        content: <span className="font-serif text-ink text-2xl">$90</span>,
-                      },
-                      {
-                        label: "Message",
-                        content: (
-                          <span className="font-mono bg-ink/5 px-2 py-0.5 text-ink text-xs border border-ink/10 break-all">
-                            PC26 + your first and last name
-                          </span>
-                        ),
-                      },
-                    ].map((step, i) => (
+                        {
+                          label: "Recipient",
+                          content: (
+                            <a
+                              href="mailto:pursuit@winontario.org"
+                              className="text-ink font-medium underline underline-offset-2 hover:text-highlight transition-colors break-all"
+                            >
+                              pursuit@winontario.org
+                            </a>
+                          ),
+                        },
+                        {
+                          label: "Amount",
+                          content: <span className="font-serif text-ink text-2xl">$90</span>,
+                        },
+                        {
+                          label: "Message",
+                          content: (
+                            <span className="font-mono bg-ink/5 px-2 py-0.5 text-ink text-xs border border-ink/10 break-all">
+                              PC26 + your first and last name
+                            </span>
+                          ),
+                        },
+                        {
+                          label: "Password",
+                          content: (
+                            <div className="space-y-1">
+                              <span className="font-mono bg-ink/5 px-2 py-0.5 text-ink text-xs border border-ink/10">
+                                torch
+                              </span>
+                              <p className="text-ink/50 text-xs italic">
+                                If prompted for a security answer, enter: torch
+                              </p>
+                            </div>
+                          ),
+                        },
+                      ].map((step, i) => (
                       <div key={i} className="flex items-stretch border-b border-ink/15 last:border-b-0">
                         <div className="bg-ink/5 px-3 py-4 flex items-center justify-center w-10 shrink-0">
                           <span className="font-serif-display italic text-ink/40 text-lg">{i + 1}</span>
