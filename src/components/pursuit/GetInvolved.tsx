@@ -78,7 +78,7 @@ const GetInvolved = () => {
                     r.title === "Become a Torch Ambassador"
                       ? "#"
                       : r.title === "Volunteer"
-                      ? "https://subsplash.com/u/-D56TVS/forms/d/c3669198-23ec-4e6e-88f4-e0e8ddd54409"
+                      ? "https://subsplash.com/winontario/lb/ev/+brjs99g/register"
                       : "#register"
                   }
                   target={r.title === "Volunteer" ? "_blank" : undefined}

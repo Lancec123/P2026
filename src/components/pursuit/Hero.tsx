@@ -110,7 +110,7 @@ style={{ color: "#FF6633", clipPath: "polygon(2% 8%, 98% 0%, 100% 92%, 96% 100%,
 
         <div className="flex flex-wrap gap-3 justify-center mt-6">
           <a
-            href="https://subsplash.com/u/-D56TVS/forms/d/fb75e7b5-c38f-4c94-83f8-a51b3d8d3f6b"
+            href="https://subsplash.com/winontario/lb/ev/+wjcpczs/register"
             target="_blank"
             rel="noopener noreferrer"
             className="px-7 py-3 text-paper text-xs uppercase tracking-[0.25em] hover:opacity-90 transition-colors"
