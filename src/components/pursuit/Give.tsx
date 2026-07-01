@@ -43,7 +43,7 @@ const Give = () => {
                 </p>
 
                 <p className="font-serif text-4xl md:text-5xl text-paper mb-6">
-                  $2,624.67 <span className="text-paper/30">/</span> $10,000
+                  $5050 <span className="text-paper/30">/</span> $10,000
                 </p>
 
                 <div className="w-full max-w-2xl relative">
@@ -60,7 +60,7 @@ const Give = () => {
 
                     <motion.div
                       initial={{ width: "0%" }}
-                      animate={{ width: "26.25%" }}
+                      animate={{ width: "50.5%" }}
                       transition={{ duration: 2.4, ease: "easeOut" }}
                       className="h-full relative rounded-full overflow-hidden"
                     >
