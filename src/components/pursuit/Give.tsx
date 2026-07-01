@@ -6,9 +6,9 @@ const steps = [
   "Go to your bank app or site (e.g. EasyWeb for TD Bank)",
   "Select Interac e-Transfer then click Send Money",
   "Select the account you wish to send from, then enter the amount",
-  "For recipient, input: finance@winontario.org",
-  "In the note field, input: PC26",
+  "For recipient, input: give2torch@winontario",
   "Send",
+
 ];
 
 const Give = () => {
@@ -153,21 +153,16 @@ const Give = () => {
                           <>
                             For recipient, input:{" "}
                             <a
-                              href="mailto:finance@winontario.org"
+                              href="mailto:give2torch@winontario"
                               className="text-paper underline underline-offset-2 hover:text-highlight transition-colors"
                             >
-                              finance@winontario.org
+                              give2torch@winontario.org
                             </a>
                           </>
                         ) : i === 4 ? (
                           <div className="space-y-2">
-                            <p>In the note field, input:{" "}
-                              <span className="font-mono bg-paper/10 px-2 py-0.5 text-paper font-bold">
-                                PC26
-                              </span>
-                            </p>
-                            <p className="text-paper/50 text-sm italic">
-                              Be advised that any donations without a fund code will be designated to WIMO's "General Fund" donation.
+                            <p>Send
+                              
                             </p>
                           </div>
                         ) : (
