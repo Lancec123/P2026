@@ -9,7 +9,7 @@ const roles = [
   },
   {
     title: "Become a Torch Ambassador",
-    desc: "Make a meaningful impact beyond your church community by engaging in various fundraising efforts to support our camp activities and achieve our goal of $10,000.",
+    desc: "Make a meaningful impact beyond your church community by joining the Torch Ambassador Project (TAP)—a peer-to-peer fundraising initiative that empowers you to raise support for Pursuit Camp. Through creative fundraising efforts, you'll help make camp more affordable, support camp activities, and bring us closer to our $10,000 goal.",
     commit: "Sign Up",
   },
   {
@@ -75,28 +75,19 @@ const GetInvolved = () => {
                 <p className="text-ink/70 leading-relaxed">{r.desc}</p>
                 <a  
                   href={
-                    r.title === "Become a Torch Ambassador"
-                      ? "#"
-                      : r.title === "Volunteer"
-                      ? "https://subsplash.com/winontario/lb/ev/+brjs99g/register"
-                      : "#register"
-                  }
-                  target={r.title === "Volunteer" ? "_blank" : undefined}
-                  rel={r.title === "Volunteer" ? "noopener noreferrer" : undefined}
-                  onClick={(e) => {
-                    if (r.title === "Become a Torch Ambassador") e.preventDefault();
-                  }}
-                  className={`inline-flex items-center gap-2 mt-6 text-sm uppercase tracking-[0.2em] transition-colors ${
-                    r.title === "Become a Torch Ambassador"
-                      ? "text-ink/30 hover:text-ink/30"
-                      : "text-ink/70 group-hover:text-highlight"
-                  }`}
+                          r.title === "Become a Torch Ambassador"
+                            ? "https://forms.gle/eMFcVnmgxuHCc5fEA"
+                            : r.title === "Volunteer"
+                            ? "https://subsplash.com/winontario/lb/ev/+brjs99g/register"
+                            : "#register"
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 mt-6 text-sm uppercase tracking-[0.2em] transition-colors text-ink/70 group-hover:text-highlight"
                 >
                   {r.title === "Pray"
-                    ? "Coming Soon!"
-                    : r.title === "Become a Torch Ambassador"
-                    ? "Coming Soon!"
-                    : "Apply"}
+                      ? "Coming Soon!"
+                      : "Apply"}
                   <span className={`transition-transform ${r.title === "Become a Torch Ambassador" ? "" : "group-hover:translate-x-1"}`}>
                     →
                   </span>
